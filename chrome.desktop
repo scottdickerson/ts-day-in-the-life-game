@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/google-chrome --disable-pinch --kiosk http://localhost:80
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=10
+Name[en_US]=TSNHMUI
+Name=TSNHMUI
+Comment[en_US]=
+Comment=

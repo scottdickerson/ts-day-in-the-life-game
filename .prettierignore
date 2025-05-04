@@ -1,0 +1,12 @@
+dist
+package-lock.json
+node_modules
+package.json
+*.mov
+*.svg
+*.png
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.webm
