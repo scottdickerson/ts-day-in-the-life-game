@@ -1,5 +1,5 @@
 {
-  "name": "palo-pinto-carousel",
+  "name": "ts-day-in-the-life",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format:fix": "prettier --write .",
-    "production": "serve -l 3000 dist"
+    "production": "serve -l 3000 dist",
+    "run-cli": "node ./src/utils/commandLineRunner.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.0",
@@ -19,6 +20,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "astro": "^5.0.5",
+    "chalk": "^5.4.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.15.3",
     "autoprefixer": "^10.4.20",
     "husky": "^9.1.7",
     "postcss": "^8.4.49",
