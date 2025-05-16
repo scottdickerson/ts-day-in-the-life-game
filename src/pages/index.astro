@@ -4,9 +4,23 @@ import Counter from '../components/Counter'
 import { Button } from '@/components/ui/button'
 ---
 
-<Layout title="Palo Pinto Carousel">
-    <Counter count={0} client:visible>
-        <h1>Hello, React!</h1>
-    </Counter>
-    <Button client:visible>ShadCN Button</Button>
+<Layout title="A Day in the Life Game">
+    <div class="container mx-auto max-w-2xl p-8 text-center">
+        <h1 class="text-4xl font-bold mb-8 text-green-600">
+            A Day in the Life
+        </h1>
+
+        <p class="text-lg mb-6">
+            Experience a day in the life of various creatures! Make choices and
+            see how they affect your journey.
+        </p>
+
+        <div class="space-y-4">
+            <a href="/game" class="inline-block">
+                <Button client:visible className="px-8 py-4 text-lg">
+                    Play Game
+                </Button>
+            </a>
+        </div>
+    </div>
 </Layout>

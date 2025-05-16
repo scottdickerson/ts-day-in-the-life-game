@@ -3,7 +3,7 @@ import * as readline from 'readline'
 import chalk from 'chalk'
 
 // Interface for a node in the game
-interface GameNode {
+export interface GameNode {
     'Code ID': string
     Content: string
 
@@ -11,20 +11,22 @@ interface GameNode {
     'choice 2': string
 }
 
-class GameEngine {
-    private gameData: Record<string, GameNode> = {}
-    private currentNodeId: string = ''
-    private rl: readline.Interface
+export class GameEngine {
+    protected gameData: Record<string, GameNode> = {}
+    protected currentNodeId: string = ''
+    private rl: readline.Interface | null = null
 
-    constructor() {
-        this.rl = readline.createInterface({
-            input: process.stdin,
-            output: process.stdout,
-        })
+    constructor(useTerminal: boolean = true) {
+        if (useTerminal && typeof process !== 'undefined') {
+            this.rl = readline.createInterface({
+                input: process.stdin,
+                output: process.stdout,
+            })
+        }
     }
 
     // Load the game data from JSON file
-    public loadGame(gameFile: string): boolean {
+    public async loadGame(gameFile: string): Promise<boolean> {
         try {
             const rawData = fs.readFileSync(gameFile, 'utf8')
             const arrayData = JSON.parse(rawData)
@@ -51,6 +53,7 @@ class GameEngine {
             return false
         }
     }
+
     returnCurrentNode(): GameNode {
         return this.gameData[this.currentNodeId]
     }
@@ -60,7 +63,8 @@ class GameEngine {
         const currentNode = this.gameData[this.currentNodeId]
         if (!currentNode) {
             console.error(`Node with ID ${this.currentNodeId} not found!`)
-            process.exit(1)
+            throw new Error(`Node with ID ${this.currentNodeId} not found!`)
+            // Don't use process.exit(1) as it's not available in the browser
         }
         console.log(chalk.green('-----------------------------------'))
         // Output the content to the terminal
@@ -75,8 +79,12 @@ class GameEngine {
 
     // Get user input (1 or 2)
     private async getUserChoice(): Promise<number> {
+        if (!this.rl) {
+            throw new Error('Terminal interface is not available')
+        }
+
         return new Promise((resolve) => {
-            this.rl.question('Enter your choice (1 or 2): ', (answer) => {
+            this.rl!.question('Enter your choice (1 or 2): ', (answer) => {
                 const choice = parseInt(answer.trim())
                 if (choice === 1 || choice === 2) {
                     resolve(choice)
@@ -124,9 +132,9 @@ class GameEngine {
 
     // Main game loop
     public async start(gameFile: string): Promise<void> {
-        if (!this.loadGame(gameFile)) {
+        if (!(await this.loadGame(gameFile))) {
             console.error('Failed to start the game.')
-            this.rl.close()
+            this.rl?.close()
             return
         }
 
@@ -142,10 +150,9 @@ class GameEngine {
             this.moveToNextNode(choice)
         }
 
-        this.rl.close()
+        this.rl?.close()
     }
 }
 
 // Export the game engine
-export { GameEngine }
 export default new GameEngine()
