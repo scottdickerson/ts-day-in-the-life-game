@@ -1,8 +1,13 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "🏗️  Testing build..."
-npm run build
+# Run formatting check
+echo "📝 Checking formatting..."
+npm run format:fix
+
+# Run linting with fixes
+echo "🔍 Running linter with auto-fixes..."
+npm run lint:fix
 
 echo "🔍 Checking code quality..."
 npm run lint

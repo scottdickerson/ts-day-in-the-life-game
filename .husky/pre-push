@@ -6,14 +6,6 @@ if command -v git-lfs >/dev/null 2>&1; then
   git lfs push --all origin $(git branch --show-current)
 fi
 
-# Run formatting check
-echo "📝 Checking formatting..."
-npm run format:fix
-
-# Run linting with fixes
-echo "🔍 Running linter with auto-fixes..."
-npm run lint:fix
-
 # Run the build with full checks
 echo "🏗️  Building project..."
 npm run build
