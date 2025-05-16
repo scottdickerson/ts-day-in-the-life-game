@@ -106,7 +106,7 @@ export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
             // Add the number of underscores to get deeper stages
             stage += underscoreCount
 
-            const calculatedProgress = Math.min((stage / 5) * 100, 100)
+            const calculatedProgress = Math.min((stage / 7) * 100, 100)
             console.log(
                 `Node ID: ${nodeId}, Stage: ${stage}, Progress: ${calculatedProgress}%`
             )
@@ -129,7 +129,7 @@ export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
     const startGame = () => {
         setGameStarted(true)
         // Initialize progress at the first stage
-        setProgress(14.3) // ~1/7 * 100 (first stage)
+        setProgress(100 / 7) // 1/7 * 100 (first stage)
     }
 
     if (isLoading) {
@@ -140,7 +140,7 @@ export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
         return (
             <div className="max-w-2xl mx-auto p-8 bg-slate-100 rounded-lg shadow-lg">
                 <h1 className="text-3xl font-bold text-center mb-6 text-green-600">
-                    A Day in the Life
+                    Choose Your Own Adventure
                 </h1>
                 <div className="mb-8 text-center">
                     <p className="text-lg text-blue-600 whitespace-pre-line">
@@ -168,7 +168,7 @@ export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
     return (
         <div className="max-w-2xl mx-auto p-8 bg-gradient-to-b from-slate-50 to-slate-200 rounded-lg shadow-lg border border-slate-300 animate-fade-in">
             <h1 className="text-3xl font-bold text-center mb-6 text-green-600 animate-pulse-slow">
-                A Day in the Life
+                Choose Your Own Adventure
             </h1>
 
             {gameStarted && (

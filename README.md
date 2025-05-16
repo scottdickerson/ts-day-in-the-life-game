@@ -12,6 +12,17 @@ sudo cp -r ./dist/* /var/www/html
 systemctl restart nginx
 ```
 
+## Data conversion
+
+- Download the csv files into the './src/data' directory
+- Delete the first line of the csv file
+- Use `csv2json` to convert the csv files to json
+
+```bash
+npm install -g csv2json
+csv2json ./src/data/2023-10-01.csv > ./public/data/2023-10-01.json
+```
+
 ## Deploying to Vercel
 
 If you want to automatically deploy to Vercel instead on push to main, you can comment in the lines of the `astro.config.mjs` file related to vercel, or overwrite the `astro.config.mjs` file with the `astro.config.vercel.mjs` file.
