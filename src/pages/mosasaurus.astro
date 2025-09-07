@@ -9,7 +9,5 @@ const dinosaurName = 'Mosasaurus'
 ---
 
 <Layout title={pageTitle} image={dinosaurImage} dinosaurName={dinosaurName}>
-    <div class="container mx-auto p-4">
-        <GameUI client:load gameDataUrl={gameDataUrl} />
-    </div>
+    <GameUI client:load gameDataUrl={gameDataUrl} dinosaurType="Mosa" />
 </Layout>

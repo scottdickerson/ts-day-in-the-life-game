@@ -6,9 +6,17 @@ import chalk from 'chalk'
 export interface GameNode {
     'Code ID': string
     Content: string
-
     'choice 1': string
     'choice 2': string
+    'env label'?: string
+    'Time of Day'?: string
+    exported?: string
+    NPC_A?: string
+    'Shot Img ID'?: string
+    'reaction label'?: string
+    'reaction img'?: string
+    NPC_B?: string
+    field13?: string
 }
 
 export class GameEngine {

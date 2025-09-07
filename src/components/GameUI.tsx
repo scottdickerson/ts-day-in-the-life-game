@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
 import { GameEngine } from '@/utils/gameEngine'
 import type { GameNode } from '@/utils/gameEngine'
+import DinosaurSceneBackground from './DinosaurSceneBackground'
+import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
+import { Button } from './ui/button'
 
 // Create a client-side only version of GameEngine by extending the base GameEngine
 class WebGameEngine extends GameEngine {
@@ -40,9 +42,13 @@ class WebGameEngine extends GameEngine {
 
 interface GameUIProps {
     gameDataUrl: string
+    dinosaurType?: 'Aguja' | 'Krito' | 'Mosa' | 'Protos' | 'Tyranno'
 }
 
-export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
+export const GameUI: React.FC<GameUIProps> = ({
+    gameDataUrl,
+    dinosaurType = 'Aguja',
+}) => {
     const [gameEngine] = useState(new WebGameEngine())
     const [currentNode, setCurrentNode] = useState<GameNode | null>(null)
     const [isLoading, setIsLoading] = useState(true)
@@ -165,88 +171,190 @@ export const GameUI: React.FC<GameUIProps> = ({ gameDataUrl }) => {
         return <div className="p-8 text-center">Error loading game node</div>
     }
 
+    // Figma-inspired layout
     return (
-        <div className="max-w-2xl mx-auto p-8 bg-gradient-to-b from-slate-50 to-slate-200 rounded-lg shadow-lg border border-slate-300 animate-fade-in">
-            <h1 className="text-3xl font-bold text-center mb-6 text-green-600 animate-pulse-slow">
-                Choose Your Own Adventure
-            </h1>
+        <div
+            style={{
+                position: 'relative',
+                width: '100%',
+                minHeight: '1080px',
+                overflow: 'hidden',
+                background: '#fff',
+            }}
+        >
+            {/* Scene background */}
+            <DinosaurSceneBackground
+                dinosaurType={dinosaurType}
+                codeId={currentNode['Code ID']}
+            />
 
-            {gameStarted && (
-                <div className="mb-6">
-                    <div className="flex justify-between text-xs text-gray-600 mb-1">
-                        <span>Progress</span>
-                        <span>{Math.round(progress)}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                        <div
-                            className="bg-green-600 h-2.5 rounded-full transition-all duration-1000 ease-in-out"
-                            style={{ width: `${progress}%` }}
-                        ></div>
-                    </div>
-                </div>
-            )}
-
-            <div className="mb-8 bg-white p-6 rounded-md shadow-inner border border-slate-200 transition-all duration-500 animate-slide-in">
-                <p className="text-lg text-blue-600 whitespace-pre-line leading-relaxed">
+            {/* Overlay for text and choices */}
+            <div
+                style={{
+                    position: 'absolute',
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    height: 400,
+                    background: 'rgba(0,0,0,0.6)',
+                    borderTopRightRadius: 80,
+                    zIndex: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-end',
+                    paddingLeft: '560px',
+                    paddingRight: '75px',
+                    alignItems: 'flex-start',
+                    margin: '0 180px',
+                }}
+            >
+                {/* Main content/question */}
+                <div
+                    style={{
+                        color: '#fff',
+                        fontFamily: 'Archivo, sans-serif',
+                        fontWeight: 500,
+                        fontSize: 33,
+                        lineHeight: '45px',
+                        marginBottom: 40,
+                        marginTop: 32,
+                        maxWidth: 985,
+                        zIndex: 2,
+                    }}
+                >
                     {currentNode.Content}
-                </p>
-            </div>
+                </div>
 
-            {!isGameOver &&
-                currentNode['choice 1'] &&
-                currentNode['choice 2'] && (
-                    <div className="space-y-4 animate-fade-in-slow">
-                        <Button
-                            variant="default"
-                            onClick={() => handleChoice(1)}
-                            className="w-full py-4 text-left px-5 bg-yellow-500 hover:bg-yellow-600 hover:translate-x-1 transform transition-all duration-300 shadow-md"
+                {/* Choices */}
+                {!isGameOver &&
+                    currentNode['choice 1'] &&
+                    currentNode['choice 2'] && (
+                        <div
+                            style={{
+                                display: 'flex',
+                                gap: 50,
+                                marginBottom: 40,
+                                zIndex: 2,
+                            }}
                         >
-                            <span className="font-medium text-yellow-900">
-                                Choice 1:
-                            </span>{' '}
-                            {currentNode['choice 1']}
-                        </Button>
+                            <button
+                                onClick={() => handleChoice(1)}
+                                style={{
+                                    background: '#4093e6',
+                                    color: '#fff',
+                                    border: 'none',
+                                    borderRadius: 100,
+                                    width: 410,
+                                    height: 100,
+                                    fontFamily: 'Archivo, sans-serif',
+                                    fontWeight: 500,
+                                    fontSize: 35,
+                                    cursor: 'pointer',
+                                    marginRight: 20,
+                                    boxShadow: '0 0 30px 0 rgba(0,0,0,0.15)',
+                                    transition: 'background 0.2s',
+                                }}
+                            >
+                                {currentNode['choice 1']}
+                            </button>
+                            <button
+                                onClick={() => handleChoice(2)}
+                                style={{
+                                    background: '#4093e6',
+                                    color: '#fff',
+                                    border: 'none',
+                                    borderRadius: 100,
+                                    width: 410,
+                                    height: 100,
+                                    fontFamily: 'Archivo, sans-serif',
+                                    fontWeight: 500,
+                                    fontSize: 35,
+                                    cursor: 'pointer',
+                                    boxShadow: '0 0 30px 0 rgba(0,0,0,0.15)',
+                                    transition: 'background 0.2s',
+                                }}
+                            >
+                                {currentNode['choice 2']}
+                            </button>
+                        </div>
+                    )}
 
-                        <Button
-                            variant="secondary"
-                            onClick={() => handleChoice(2)}
-                            className="w-full py-4 text-left px-5 bg-purple-500 hover:bg-purple-600 text-white hover:translate-x-1 transform transition-all duration-300 shadow-md"
+                {/* Game Over UI */}
+                {isGameOver && (
+                    <div
+                        style={{
+                            color: '#fff',
+                            textAlign: 'center',
+                            width: '100%',
+                            zIndex: 2,
+                            marginTop: 40,
+                        }}
+                    >
+                        <p
+                            style={{
+                                fontSize: 32,
+                                fontWeight: 600,
+                                marginBottom: 16,
+                            }}
                         >
-                            <span className="font-medium text-purple-200">
-                                Choice 2:
-                            </span>{' '}
-                            {currentNode['choice 2']}
-                        </Button>
+                            Your Journey Ends
+                        </p>
+                        <p style={{ fontSize: 24, marginBottom: 32 }}>
+                            Thank you for experiencing a day in the life!
+                        </p>
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                gap: 24,
+                            }}
+                        >
+                            <button
+                                onClick={resetGame}
+                                style={{
+                                    background: '#4093e6',
+                                    color: '#fff',
+                                    border: 'none',
+                                    borderRadius: 100,
+                                    width: 220,
+                                    height: 70,
+                                    fontFamily: 'Archivo, sans-serif',
+                                    fontWeight: 500,
+                                    fontSize: 28,
+                                    cursor: 'pointer',
+                                    marginRight: 10,
+                                }}
+                            >
+                                Play Again
+                            </button>
+                            <a href="/">
+                                <button
+                                    style={{
+                                        background: 'transparent',
+                                        color: '#fff',
+                                        border: '2px solid #4093e6',
+                                        borderRadius: 100,
+                                        width: 220,
+                                        height: 70,
+                                        fontFamily: 'Archivo, sans-serif',
+                                        fontWeight: 500,
+                                        fontSize: 28,
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Return Home
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 )}
+            </div>
 
-            {isGameOver && (
-                <div className="text-center mt-8 p-6 border-2 border-green-500 rounded-lg bg-green-50 animate-fade-in shadow-lg">
-                    <p className="text-2xl font-semibold mb-4 text-green-700">
-                        Your Journey Ends
-                    </p>
-                    <p className="mb-6 text-green-600">
-                        Thank you for experiencing a day in the life!
-                    </p>
-                    <div className="flex justify-center space-x-4">
-                        <Button
-                            variant="outline"
-                            onClick={resetGame}
-                            className="bg-green-600 text-white hover:bg-green-700 transition-all duration-300"
-                        >
-                            Play Again
-                        </Button>
-                        <a href="/">
-                            <Button
-                                variant="outline"
-                                className="border-green-600 text-green-700 hover:bg-green-50"
-                            >
-                                Return Home
-                            </Button>
-                        </a>
-                    </div>
-                </div>
-            )}
+            {/* Dinosaur reaction image */}
+            <DinosaurOnChoiceScreen
+                dinosaurType={dinosaurType}
+                reactionLabel={currentNode['reaction label'] ?? 'neutral'}
+            />
         </div>
     )
 }
