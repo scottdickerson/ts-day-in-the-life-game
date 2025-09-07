@@ -55,8 +55,8 @@ export const GameUI: React.FC<GameUIProps> = ({
     const [isGameOver, setIsGameOver] = useState(false)
     const [gameStarted, setGameStarted] = useState(false)
     const [welcomeMessage, setWelcomeMessage] = useState('')
-    const [progress, setProgress] = useState(0)
-    const [nodeHistory, setNodeHistory] = useState<string[]>([])
+    const [_progress, setProgress] = useState(0)
+    const [_nodeHistory, setNodeHistory] = useState<string[]>([])
 
     useEffect(() => {
         const loadGame = async () => {
