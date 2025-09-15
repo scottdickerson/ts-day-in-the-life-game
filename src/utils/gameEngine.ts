@@ -4,6 +4,9 @@ import chalk from 'chalk'
 
 // Interface for a node in the game
 export interface GameNode {
+    /**
+     * Each code ID follows a pattern like this: 1a_2a  (where each level deeper in the tree adds a <number>a or <number>b where the <number> indicates the current depth of choices
+     */
     'Code ID': string
     Content: string
     'choice 1': string
@@ -120,6 +123,14 @@ export class GameEngine {
 
         this.currentNodeId = `${currentNode['Code ID']}_${parseInt(lastDigit) + 1}${choiceSuffix}`
         return true
+    }
+
+    moveToPreviousNode() {
+        const parts = this.currentNodeId.split('_')
+        this.currentNodeId =
+            parts.length > 1
+                ? parts.slice(0, -1).join('_')
+                : this.currentNodeId.slice(0, -1)
     }
 
     moveToLastNode(): boolean {

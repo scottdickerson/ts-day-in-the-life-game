@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '../layouts/Layout.astro'
+import { DinosaurWelcomeScreen } from '../components/DinosaurWelcomeScreen'
+import { dinos } from '@/data/siteData'
+
+// Extract dino param from the URL path
+const { dino } = Astro.params
+export const getStaticPaths = (() => {
+    return dinos.map((dino) => ({
+        params: { dino: dino.id.toLocaleLowerCase() },
+    }))
+}) satisfies GetStaticPaths
+
+const dinoURL =
+    dinos.find((dinoToMatch) => dinoToMatch.id.toLocaleLowerCase() === dino)
+        ?.name ?? ''
+---
+
+<Layout title={`Welcome ${dinoURL}`}>
+    <DinosaurWelcomeScreen
+        client:only="react"
+        dinoName={dinoURL}
+        dinoId={dino}
+    />
+</Layout>

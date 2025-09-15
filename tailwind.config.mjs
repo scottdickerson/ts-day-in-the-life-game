@@ -5,6 +5,10 @@ export default {
     content: ['./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}'],
     theme: {
         extend: {
+            backgroundImage: {
+                'radial-dino-select':
+                    'radial-gradient(103.7% 66.48% at 50% 50%, #A4D58D 0%, #668948 100%)',
+            },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-in-out',
                 'fade-in-slow': 'fadeIn 0.8s ease-in-out',

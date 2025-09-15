@@ -3,7 +3,10 @@ import { GameEngine } from '@/utils/gameEngine'
 import type { GameNode } from '@/utils/gameEngine'
 import DinosaurSceneBackground from './DinosaurSceneBackground'
 import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
-import { Button } from './ui/button'
+import { ChoiceOverlay } from './ChoiceOverlay'
+import { ControlButtons } from './ControlButtons'
+import { FinalScreen } from './FinalScreen'
+import { determineDinoFinalState } from './utils'
 
 // Create a client-side only version of GameEngine by extending the base GameEngine
 class WebGameEngine extends GameEngine {
@@ -86,6 +89,15 @@ export const GameUI: React.FC<GameUIProps> = ({
         loadGame()
     }, [gameDataUrl, gameEngine])
 
+    const handleBack =
+        gameEngine.returnCurrentNode()?.['Code ID']?.length === 1
+            ? undefined
+            : () => {
+                  gameEngine.moveToPreviousNode()
+                  const node = gameEngine.returnCurrentNode()
+                  setCurrentNode(node)
+              }
+
     const handleChoice = (choice: number) => {
         // Store current node ID in history
         if (currentNode) {
@@ -129,226 +141,44 @@ export const GameUI: React.FC<GameUIProps> = ({
     }
 
     const resetGame = () => {
-        window.location.reload()
-    }
-
-    const startGame = () => {
-        setGameStarted(true)
-        // Initialize progress at the first stage
-        setProgress(100 / 7) // 1/7 * 100 (first stage)
+        window.location.pathname = '/'
     }
 
     if (isLoading) {
         return <div className="p-8 text-center">Loading game data...</div>
     }
 
-    if (!gameStarted) {
-        return (
-            <div className="max-w-2xl mx-auto p-8 bg-slate-100 rounded-lg shadow-lg">
-                <h1 className="text-3xl font-bold text-center mb-6 text-green-600">
-                    Choose Your Own Adventure
-                </h1>
-                <div className="mb-8 text-center">
-                    <p className="text-lg text-blue-600 whitespace-pre-line">
-                        {welcomeMessage}
-                    </p>
-                </div>
-                <div className="flex justify-center">
-                    <Button
-                        variant="default"
-                        size="lg"
-                        onClick={startGame}
-                        className="px-8 py-4 text-lg"
-                    >
-                        Start Game
-                    </Button>
-                </div>
-            </div>
-        )
-    }
-
     if (!currentNode) {
         return <div className="p-8 text-center">Error loading game node</div>
+    }
+    if (isGameOver) {
+        return (
+            <FinalScreen
+                message={currentNode.Content}
+                state={determineDinoFinalState(currentNode['reaction label'])}
+                dinoId={dinosaurType}
+                onRestart={resetGame}
+                reaction={currentNode['reaction label'] ?? ''}
+            />
+        )
     }
 
     // Figma-inspired layout
     return (
-        <div
-            style={{
-                position: 'relative',
-                width: '100%',
-                minHeight: '1080px',
-                overflow: 'hidden',
-                background: '#fff',
-            }}
-        >
+        <div className="relative w-full min-h-[1080px] overflow-hidden bg-white">
             {/* Scene background */}
             <DinosaurSceneBackground
                 dinosaurType={dinosaurType}
                 codeId={currentNode['Code ID']}
             />
+            <ControlButtons onBack={handleBack} />
 
-            {/* Overlay for text and choices */}
-            <div
-                style={{
-                    position: 'absolute',
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    height: 400,
-                    background: 'rgba(0,0,0,0.6)',
-                    borderTopRightRadius: 80,
-                    zIndex: 1,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'flex-end',
-                    paddingLeft: '560px',
-                    paddingRight: '75px',
-                    alignItems: 'flex-start',
-                    margin: '0 180px',
-                }}
-            >
-                {/* Main content/question */}
-                <div
-                    style={{
-                        color: '#fff',
-                        fontFamily: 'Archivo, sans-serif',
-                        fontWeight: 500,
-                        fontSize: 33,
-                        lineHeight: '45px',
-                        marginBottom: 40,
-                        marginTop: 32,
-                        maxWidth: 985,
-                        zIndex: 2,
-                    }}
-                >
-                    {currentNode.Content}
-                </div>
-
-                {/* Choices */}
-                {!isGameOver &&
-                    currentNode['choice 1'] &&
-                    currentNode['choice 2'] && (
-                        <div
-                            style={{
-                                display: 'flex',
-                                gap: 50,
-                                marginBottom: 40,
-                                zIndex: 2,
-                            }}
-                        >
-                            <button
-                                onClick={() => handleChoice(1)}
-                                style={{
-                                    background: '#4093e6',
-                                    color: '#fff',
-                                    border: 'none',
-                                    borderRadius: 100,
-                                    width: 410,
-                                    height: 100,
-                                    fontFamily: 'Archivo, sans-serif',
-                                    fontWeight: 500,
-                                    fontSize: 35,
-                                    cursor: 'pointer',
-                                    marginRight: 20,
-                                    boxShadow: '0 0 30px 0 rgba(0,0,0,0.15)',
-                                    transition: 'background 0.2s',
-                                }}
-                            >
-                                {currentNode['choice 1']}
-                            </button>
-                            <button
-                                onClick={() => handleChoice(2)}
-                                style={{
-                                    background: '#4093e6',
-                                    color: '#fff',
-                                    border: 'none',
-                                    borderRadius: 100,
-                                    width: 410,
-                                    height: 100,
-                                    fontFamily: 'Archivo, sans-serif',
-                                    fontWeight: 500,
-                                    fontSize: 35,
-                                    cursor: 'pointer',
-                                    boxShadow: '0 0 30px 0 rgba(0,0,0,0.15)',
-                                    transition: 'background 0.2s',
-                                }}
-                            >
-                                {currentNode['choice 2']}
-                            </button>
-                        </div>
-                    )}
-
-                {/* Game Over UI */}
-                {isGameOver && (
-                    <div
-                        style={{
-                            color: '#fff',
-                            textAlign: 'center',
-                            width: '100%',
-                            zIndex: 2,
-                            marginTop: 40,
-                        }}
-                    >
-                        <p
-                            style={{
-                                fontSize: 32,
-                                fontWeight: 600,
-                                marginBottom: 16,
-                            }}
-                        >
-                            Your Journey Ends
-                        </p>
-                        <p style={{ fontSize: 24, marginBottom: 32 }}>
-                            Thank you for experiencing a day in the life!
-                        </p>
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                gap: 24,
-                            }}
-                        >
-                            <button
-                                onClick={resetGame}
-                                style={{
-                                    background: '#4093e6',
-                                    color: '#fff',
-                                    border: 'none',
-                                    borderRadius: 100,
-                                    width: 220,
-                                    height: 70,
-                                    fontFamily: 'Archivo, sans-serif',
-                                    fontWeight: 500,
-                                    fontSize: 28,
-                                    cursor: 'pointer',
-                                    marginRight: 10,
-                                }}
-                            >
-                                Play Again
-                            </button>
-                            <a href="/">
-                                <button
-                                    style={{
-                                        background: 'transparent',
-                                        color: '#fff',
-                                        border: '2px solid #4093e6',
-                                        borderRadius: 100,
-                                        width: 220,
-                                        height: 70,
-                                        fontFamily: 'Archivo, sans-serif',
-                                        fontWeight: 500,
-                                        fontSize: 28,
-                                        cursor: 'pointer',
-                                    }}
-                                >
-                                    Return Home
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                )}
-            </div>
+            <ChoiceOverlay
+                currentNode={currentNode}
+                isGameOver={isGameOver}
+                onChoice={handleChoice}
+                onReset={resetGame}
+            />
 
             {/* Dinosaur reaction image */}
             <DinosaurOnChoiceScreen
@@ -358,5 +188,3 @@ export const GameUI: React.FC<GameUIProps> = ({
         </div>
     )
 }
-
-export default GameUI

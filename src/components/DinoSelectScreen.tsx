@@ -2,31 +2,31 @@
 import { dinos } from '@/data/siteData'
 import React from 'react'
 
+/**
+ *
+ * Users choose their cretaceous creature on this screen
+ */
 export const DinoSelectScreen: React.FC = () => (
-    <div className="relative w-screen h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#eaf7e6] to-[#d2e6f7]">
-        <div className="text-center mb-8">
-            <h1 className="text-[80px] font-archivo font-bold text-[#2a5433] mb-4 drop-shadow-lg">
-                Choose Your Dinosaur
+    <div className="relative w-screen h-screen flex flex-col bg-radial-dino-select">
+        <div className="text-center mb-8 mt-24">
+            <h1 className="text-[60px] font-archivo font-bold text-[#F5F5F5] mb-4 drop-shadow-lg">
+                Choose a Cretaceous creature
             </h1>
-            <p className="text-[32px] font-archivo text-[#19528b] mb-12">
-                Select a dinosaur to begin your adventure!
-            </p>
         </div>
-        <div className="flex flex-wrap gap-12 justify-center items-center">
+        <div className="flex flex-wrap gap-12 gap-y-0 justify-center items-center">
             {dinos.map((dino) => (
                 <a
                     key={dino.id}
-                    href={`/${dino.name.toLowerCase()}`}
-                    className="flex flex-col items-center bg-white/90 rounded-3xl shadow-xl p-8 hover:scale-105 hover:bg-blue-50 transition cursor-pointer border-4 border-transparent hover:border-[#4093e6] focus:outline-none no-underline"
-                    style={{ minWidth: 260, minHeight: 340 }}
+                    href={`/${dino.id.toLowerCase()}.welcome`}
+                    className="flex flex-col items-center hover:scale-105 transition cursor-pointer no-underline"
                 >
                     <img
                         src={dino.image}
                         alt={dino.name}
-                        className="w-[220px] h-[220px] object-contain mb-6 drop-shadow-xl"
+                        className="w-[550px] object-contain drop-shadow-xl"
                         draggable={false}
                     />
-                    <span className="text-[32px] font-archivo font-semibold text-[#19528b] tracking-wide drop-shadow">
+                    <span className="text-[35px] font-archivo font-semibold text-[#F5F5F5] tracking-wide drop-shadow italic">
                         {dino.name}
                     </span>
                 </a>

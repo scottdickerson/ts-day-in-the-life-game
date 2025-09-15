@@ -53,6 +53,10 @@ const reactionMap: Record<string, Record<string, string>> = {
     },
 }
 
+/**
+ *
+ * This component renders the dinosaur picture
+ */
 const DinosaurOnGameScreen: React.FC<DinosaurOnGameScreenProps> = ({
     dinosaurType,
     reactionLabel,
@@ -65,6 +69,7 @@ const DinosaurOnGameScreen: React.FC<DinosaurOnGameScreenProps> = ({
         <img
             src={src}
             alt={reactionLabel}
+            className=""
             style={{
                 position: 'absolute',
                 bottom: 0,

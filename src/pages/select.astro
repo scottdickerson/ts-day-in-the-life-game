@@ -1,5 +1,8 @@
 ---
 import { DinoSelectScreen } from '../components/DinoSelectScreen'
+import Layout from '@/layouts/Layout.astro'
 ---
 
-<DinoSelectScreen client:only="react" />
+<Layout title="Select Creature">
+    <DinoSelectScreen client:only="react" />
+</Layout>

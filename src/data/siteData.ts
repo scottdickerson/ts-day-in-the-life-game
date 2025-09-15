@@ -16,6 +16,11 @@ export const dinos = [
         image: '/SelectScreenAssets/Krito.png',
     },
     {
+        id: 'Tyranno',
+        name: 'Tyrannosaurus',
+        image: '/SelectScreenAssets/Tyranno.png',
+    },
+    {
         id: 'Mosa',
         name: 'Mosasaurus',
         image: '/SelectScreenAssets/Mosa.png',
@@ -24,10 +29,5 @@ export const dinos = [
         id: 'Protos',
         name: 'Protohadros',
         image: '/SelectScreenAssets/protos.png',
-    },
-    {
-        id: 'Tyranno',
-        name: 'Tyrannosaurus',
-        image: '/SelectScreenAssets/Tyranno.png',
     },
 ]
