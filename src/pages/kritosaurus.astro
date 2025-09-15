@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { GameUI } from '../components/GameUI'
+import { DinosaurTypeEnum } from '@/components/utils'
 
 const pageTitle = 'A Day in the Life of a Kritosaurus'
 const gameDataUrl = '/data/Kritosaurus.json'
 const dinosaurImage = '/Krito.png'
 const dinosaurName = 'Kritosaurus'
+const dinosaurType = DinosaurTypeEnum.Krito
 ---
 
 <Layout title={pageTitle} image={dinosaurImage} dinosaurName={dinosaurName}>
-    <GameUI client:load gameDataUrl={gameDataUrl} dinosaurType="Krito" />
+    <GameUI client:load gameDataUrl={gameDataUrl} dinosaurType={dinosaurType} />
 </Layout>

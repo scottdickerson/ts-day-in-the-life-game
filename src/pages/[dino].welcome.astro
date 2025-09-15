@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro'
 import Layout from '../layouts/Layout.astro'
 import { DinosaurWelcomeScreen } from '../components/DinosaurWelcomeScreen'
 import { dinos } from '@/data/siteData'
+import type { DinosaurTypeEnum } from '@/components/utils'
 
 // Extract dino param from the URL path
 const { dino } = Astro.params
@@ -21,6 +22,6 @@ const dinoURL =
     <DinosaurWelcomeScreen
         client:only="react"
         dinoName={dinoURL}
-        dinoId={dino}
+        dinoId={dino as DinosaurTypeEnum}
     />
 </Layout>

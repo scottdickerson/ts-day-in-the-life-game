@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { FinalScreen, FinalDinosaurState } from './FinalScreen'
+import { DinosaurTypeEnum } from './utils'
 
 const reactions = [
     'happy',
@@ -19,12 +20,12 @@ const meta: Meta<typeof FinalScreen> = {
             options: Object.values(FinalDinosaurState),
         },
         reaction: { control: 'select', options: reactions },
-        dinoId: { control: 'text' },
+        dinosaurType: { control: 'text' },
     },
     args: {
         message: 'You sleep soundly knowing you are safer in numbers.',
         state: FinalDinosaurState.GOOD,
-        dinoId: 'Aguja',
+        dinosaurType: DinosaurTypeEnum.Aguja,
         reaction: 'happy',
     },
 }
