@@ -28,6 +28,6 @@ export const dinos = [
     {
         id: 'Protos',
         name: 'Protohadros',
-        image: '/SelectScreenAssets/protos.png',
+        image: '/SelectScreenAssets/Protos.png',
     },
 ]

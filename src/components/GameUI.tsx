@@ -6,7 +6,7 @@ import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
 import { ChoiceOverlay } from './ChoiceOverlay'
 import { ControlButtons } from './ControlButtons'
 import { FinalScreen } from './FinalScreen'
-import { determineDinoFinalState } from './utils'
+import { determineDinoFinalState, DinosaurTypeEnum } from './utils'
 
 // Create a client-side only version of GameEngine by extending the base GameEngine
 class WebGameEngine extends GameEngine {
@@ -45,12 +45,12 @@ class WebGameEngine extends GameEngine {
 
 interface GameUIProps {
     gameDataUrl: string
-    dinosaurType?: 'Aguja' | 'Krito' | 'Mosa' | 'Protos' | 'Tyranno'
+    dinosaurType?: DinosaurTypeEnum
 }
 
 export const GameUI: React.FC<GameUIProps> = ({
     gameDataUrl,
-    dinosaurType = 'Aguja',
+    dinosaurType = DinosaurTypeEnum.Aguja,
 }) => {
     const [gameEngine] = useState(new WebGameEngine())
     const [currentNode, setCurrentNode] = useState<GameNode | null>(null)
@@ -130,16 +130,16 @@ export const GameUI: React.FC<GameUIProps> = ({
             )
             setProgress(calculatedProgress)
         }
-
-        if (gameEngine.isGameOver()) {
-            gameEngine.moveToLastNode()
-            setCurrentNode(gameEngine.returnCurrentNode())
-            setIsGameOver(true)
-            // Ensure progress is 100% when game is over
-            setProgress(100)
-        }
     }
 
+    const handleMoveToLastNode = () => {
+        gameEngine.moveToLastNode()
+        setCurrentNode(gameEngine.returnCurrentNode())
+        setIsGameOver(true)
+        // Ensure progress is 100% when game is over
+        setProgress(100)
+        return
+    }
     const resetGame = () => {
         window.location.pathname = '/'
     }
@@ -156,7 +156,7 @@ export const GameUI: React.FC<GameUIProps> = ({
             <FinalScreen
                 message={currentNode.Content}
                 state={determineDinoFinalState(currentNode['reaction label'])}
-                dinoId={dinosaurType}
+                dinosaurType={dinosaurType}
                 onRestart={resetGame}
                 reaction={currentNode['reaction label'] ?? ''}
             />
@@ -177,6 +177,7 @@ export const GameUI: React.FC<GameUIProps> = ({
                 currentNode={currentNode}
                 isGameOver={isGameOver}
                 onChoice={handleChoice}
+                onMoveToLastNode={handleMoveToLastNode}
                 onReset={resetGame}
             />
 

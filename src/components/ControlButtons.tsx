@@ -8,7 +8,7 @@ export const ControlButtons = ({ onBack }: ControlButtonProps) => {
             {onBack ? (
                 <button
                     aria-label="Go back"
-                    className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-200 transition"
+                    className="bg-white text-black px-4 py-2 text-5xl rounded shadow hover:bg-gray-200 transition"
                     onClick={onBack}
                 >
                     Back
@@ -16,7 +16,7 @@ export const ControlButtons = ({ onBack }: ControlButtonProps) => {
             ) : null}
             <button
                 aria-label="Restart game"
-                className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-200 transition"
+                className="bg-white text-black px-4 py-2 text-5xl rounded shadow hover:bg-gray-200 transition"
                 onClick={() => (window.location.pathname = '/')}
             >
                 Restart

@@ -1,16 +1,17 @@
 import React from 'react'
+import { DinosaurTypeEnum } from './utils'
 
 interface DinosaurSceneBackgroundProps {
-    dinosaurType: 'Aguja' | 'Krito' | 'Mosa' | 'Protos' | 'Tyranno'
+    dinosaurType: DinosaurTypeEnum
     codeId: string
 }
 
-const sceneDirMap: Record<string, string> = {
-    Aguja: '/AgujaScenes',
-    Krito: '/KritoScenes',
-    Mosa: '/MosaScenes',
-    Protos: '/ProtosScenes',
-    Tyranno: '/TyrannoScenes',
+const sceneDirMap: Record<DinosaurTypeEnum, string> = {
+    [DinosaurTypeEnum.Aguja]: '/AgujaScenes',
+    [DinosaurTypeEnum.Krito]: '/KritoScenes',
+    [DinosaurTypeEnum.Mosa]: '/MosaScenes',
+    [DinosaurTypeEnum.Protos]: '/ProtosScenes',
+    [DinosaurTypeEnum.Tyranno]: '/TyrannoScenes',
 }
 
 const DinosaurSceneBackground: React.FC<DinosaurSceneBackgroundProps> = ({
@@ -35,7 +36,12 @@ const DinosaurSceneBackground: React.FC<DinosaurSceneBackgroundProps> = ({
                 zIndex: 0,
             }}
             aria-label="Scene background"
-        />
+        >
+            <div className="flex flex-col w-fit ">
+                <span className="bg-black text-white p-1 rounded text-5xl">{`Scene Code: ${codeId}`}</span>
+                <span className="bg-black text-white p-1 rounded text-5xl">{`Scene Background: ${scenePath}`}</span>
+            </div>
+        </div>
     )
 }
 

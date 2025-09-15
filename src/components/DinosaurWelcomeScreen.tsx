@@ -1,4 +1,5 @@
 import React from 'react'
+import type { DinosaurTypeEnum } from './utils'
 
 /**
  * DinosaurWelcomeScreen
@@ -7,7 +8,7 @@ import React from 'react'
  */
 export interface DinosaurWelcomeScreenProps {
     dinoName: string
-    dinoId: string
+    dinoId: DinosaurTypeEnum
     description?: string
 }
 
@@ -74,7 +75,7 @@ export const DinosaurWelcomeScreen: React.FC<DinosaurWelcomeScreenProps> = ({
                 <div className="relative w-[948px] h-[569px] z-20">
                     <img
                         src={pose}
-                        alt={dinoId}
+                        alt={dinoId.toString()}
                         className="absolute inset-0 w-full h-full object-contain drop-shadow-[0_12px_32px_rgba(0,0,0,0.45)] pointer-events-none select-none"
                         draggable={false}
                     />

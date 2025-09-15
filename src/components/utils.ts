@@ -10,8 +10,8 @@ export const determineDinoFinalState = (reaction: string = '') => {
     }
 }
 
-export const determineDinoFinalImage = (
-    dinoId: string,
+export const determineDinoImage = (
+    dinoId: DinosaurTypeEnum,
     reaction: string = 'neutral'
 ) => {
     let formattedReaction = reaction
@@ -22,6 +22,9 @@ export const determineDinoFinalImage = (
         case 'dead with injury':
             formattedReaction = 'deadwInjury'
             break
+        case 'flirty':
+            formattedReaction = 'flirty'
+            break
         case 'happy':
             formattedReaction = 'happy'
             break
@@ -31,5 +34,13 @@ export const determineDinoFinalImage = (
         default:
             formattedReaction = 'neutral'
     }
-    return `${dinoId}Reactions/${dinoId.toLowerCase()}_${formattedReaction}.png`
+    return `${dinoId}Reactions/${dinoId.toString().toLowerCase()}_${formattedReaction}.png`
+}
+
+export enum DinosaurTypeEnum {
+    'Aguja' = 'Aguja',
+    'Krito' = 'Krito',
+    'Mosa' = 'Mosa',
+    'Protos' = 'Protos',
+    'Tyranno' = 'Tyranno',
 }

@@ -1,0 +1,2 @@
+- Add NPC B rendered animal
+- Test storybook stories with all the various permutations

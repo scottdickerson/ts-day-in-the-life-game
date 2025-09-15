@@ -1,5 +1,5 @@
 import React from 'react'
-import { determineDinoFinalImage } from './utils'
+import { determineDinoImage, DinosaurTypeEnum } from './utils'
 
 export enum FinalDinosaurState {
     GOOD,
@@ -16,7 +16,7 @@ export interface FinalScreenProps {
     /** Center message shown below the character */
     message: string
     state: FinalDinosaurState
-    dinoId: string
+    dinosaurType: DinosaurTypeEnum
     onRestart?: () => void
     reaction: string
 }
@@ -36,7 +36,7 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
     message,
     state,
     onRestart,
-    dinoId,
+    dinosaurType,
     reaction,
 }) => {
     return (
@@ -56,7 +56,7 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
 
             <img
                 className="absolute top-[156px] left-1/2 -translate-x-1/2 w-[783px] h-[685px] "
-                src={determineDinoFinalImage(dinoId, reaction)}
+                src={determineDinoImage(dinosaurType, reaction)}
             />
 
             {/* Message */}
