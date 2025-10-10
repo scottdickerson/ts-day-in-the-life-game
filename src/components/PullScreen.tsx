@@ -19,12 +19,13 @@ export const PullScreen: React.FC = () => {
 
                 {/* Title */}
                 <h1
-                    className="relative mt-60 text-center font-archivo font-black text-[#3c7748] leading-none drop-shadow-[0_4px_6px_rgba(0,0,0,0.25)] select-none"
+                    className="relative mt-40 text-center font-archivo font-black text-[#3c7748] leading-none drop-shadow-[0_4px_6px_rgba(0,0,0,0.25)] select-none"
                     style={{ fontSize: 'clamp(3rem, 12vw, 10.9rem)' }}
                 >
-                    A Cretaceous
+                    {/* A Cretaceous
                     <br />
-                    Adventure
+                    Adventure */}
+                    <img src="TitleScreenAssets/Title.png"></img>
                 </h1>
 
                 {/* Call To Action */}
