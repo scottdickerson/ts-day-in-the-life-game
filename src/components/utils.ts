@@ -1,9 +1,33 @@
 import { FinalDinosaurState } from './FinalScreen'
 
+export enum DinosaurReaction {
+    HAPPY = 'happy',
+    NEUTRAL = 'neutral',
+    AFRAID = 'afraid',
+    INJURED = 'injured',
+    DEAD = 'dead',
+    DEAD_WITH_INJURY = 'Dead with Injury',
+    FLIRTY = 'flirty',
+    FLIRTACIOUS = 'flirtacious',
+    EATING = 'eating',
+    EMPTY = '',
+    DASH = '-',
+}
+
 export const determineDinoFinalState = (reaction: string = '') => {
-    if (['Dead with Injury', 'dead'].includes(reaction)) {
+    if (
+        [DinosaurReaction.DEAD_WITH_INJURY, DinosaurReaction.DEAD].includes(
+            reaction as DinosaurReaction
+        )
+    ) {
         return FinalDinosaurState.DEAD
-    } else if (['neutral', 'injured', 'afraid'].includes(reaction)) {
+    } else if (
+        [
+            DinosaurReaction.NEUTRAL,
+            DinosaurReaction.INJURED,
+            DinosaurReaction.AFRAID,
+        ].includes(reaction as DinosaurReaction)
+    ) {
         return FinalDinosaurState.NEUTRAL
     } else {
         return FinalDinosaurState.GOOD
@@ -12,28 +36,33 @@ export const determineDinoFinalState = (reaction: string = '') => {
 
 export const determineDinoImage = (
     dinoId: DinosaurTypeEnum,
-    reaction: string = 'neutral',
+    reaction: string = DinosaurReaction.NEUTRAL,
     isFinal?: boolean
 ) => {
     let formattedReaction = reaction
     switch (reaction.toLowerCase()) {
-        case 'afraid':
+        case DinosaurReaction.AFRAID.toLowerCase():
             formattedReaction = 'afraid'
             break
-        case 'dead':
+        case DinosaurReaction.DEAD.toLowerCase():
             formattedReaction = 'dead'
             break
-        case 'dead with injury':
+        case DinosaurReaction.DEAD_WITH_INJURY.toLowerCase():
             formattedReaction = 'deadwInjury'
             break
-        case 'flirty':
+        case DinosaurReaction.FLIRTY.toLowerCase():
+        case DinosaurReaction.FLIRTACIOUS.toLowerCase():
             formattedReaction = 'flirty'
             break
-        case 'happy':
+        case DinosaurReaction.HAPPY.toLowerCase():
             formattedReaction = 'happy'
             break
-        case 'injured':
+        case DinosaurReaction.INJURED.toLowerCase():
             formattedReaction = 'injured'
+            break
+        case DinosaurReaction.EATING.toLowerCase():
+            // TODO: need picture for eating
+            formattedReaction = 'neutral'
             break
         default:
             formattedReaction = 'neutral'

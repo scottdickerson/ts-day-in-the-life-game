@@ -6,7 +6,7 @@ import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
 import { ChoiceOverlay } from './ChoiceOverlay'
 import { ControlButtons } from './ControlButtons'
 import { FinalScreen } from './FinalScreen'
-import { DinosaurTypeEnum } from './utils'
+import { DinosaurTypeEnum, DinosaurReaction } from './utils'
 
 // Create a client-side only version of GameEngine by extending the base GameEngine
 class WebGameEngine extends GameEngine {
@@ -183,7 +183,9 @@ export const GameUI: React.FC<GameUIProps> = ({
             {/* Dinosaur reaction image */}
             <DinosaurOnChoiceScreen
                 dinosaurType={dinosaurType}
-                reactionLabel={currentNode['reaction label'] ?? 'neutral'}
+                reactionLabel={
+                    currentNode['reaction label'] ?? DinosaurReaction.NEUTRAL
+                }
             />
         </div>
     )

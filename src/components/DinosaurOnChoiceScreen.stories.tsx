@@ -1,16 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
-import { DinosaurTypeEnum } from './utils'
-
-const reactions = [
-    'neutral',
-    'happy',
-    'afraid',
-    'flirty',
-    'injured',
-    'Dead with Injury',
-    'dead',
-]
+import { DinosaurTypeEnum, DinosaurReaction } from './utils'
 
 const meta: Meta<typeof DinosaurOnChoiceScreen> = {
     title: 'Game/DinosaurOnChoiceScreen',
@@ -20,11 +10,14 @@ const meta: Meta<typeof DinosaurOnChoiceScreen> = {
             control: 'select',
             options: Object.values(DinosaurTypeEnum),
         },
-        reactionLabel: { control: 'select', options: reactions },
+        reactionLabel: {
+            control: 'select',
+            options: Object.values(DinosaurReaction),
+        },
     },
     args: {
         dinosaurType: DinosaurTypeEnum.Aguja,
-        reactionLabel: 'neutral',
+        reactionLabel: DinosaurReaction.NEUTRAL,
     },
 }
 export default meta
@@ -32,9 +25,17 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Neutral: Story = {}
-export const Happy: Story = { args: { reactionLabel: 'happy' } }
-export const Afraid: Story = { args: { reactionLabel: 'afraid' } }
-export const Flirty: Story = { args: { reactionLabel: 'flirty' } }
-export const Injured: Story = { args: { reactionLabel: 'injured' } }
-export const DeadInjury: Story = { args: { reactionLabel: 'Dead with Injury' } }
-export const Dead: Story = { args: { reactionLabel: 'dead' } }
+export const Happy: Story = { args: { reactionLabel: DinosaurReaction.HAPPY } }
+export const Afraid: Story = {
+    args: { reactionLabel: DinosaurReaction.AFRAID },
+}
+export const Flirty: Story = {
+    args: { reactionLabel: DinosaurReaction.FLIRTY },
+}
+export const Injured: Story = {
+    args: { reactionLabel: DinosaurReaction.INJURED },
+}
+export const DeadInjury: Story = {
+    args: { reactionLabel: DinosaurReaction.DEAD_WITH_INJURY },
+}
+export const Dead: Story = { args: { reactionLabel: DinosaurReaction.DEAD } }
