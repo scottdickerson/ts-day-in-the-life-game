@@ -23,6 +23,16 @@ npm install -g csv2json
 csv2json ./src/data/2023-10-01.csv > ./public/data/2023-10-01.json
 ```
 
+## Scene Image Validation
+
+This project includes automatic validation to ensure all story scenes have corresponding background images:
+
+- **Automatic validation**: Runs before every commit via git hooks
+- **Manual validation**: Run `npm run check-scenes` anytime
+- **Documentation**: See [Scene Validation Guide](./docs/scene-validation.md) for details
+
+The validation checks that every exported story code in the dinosaur JSON files has a matching PNG image in the appropriate scene folder.
+
 ## Deploying to Vercel
 
 If you want to automatically deploy to Vercel instead on push to main, you can comment in the lines of the `astro.config.mjs` file related to vercel, or overwrite the `astro.config.mjs` file with the `astro.config.vercel.mjs` file.

@@ -2,22 +2,22 @@ import React from 'react'
 import type { DinosaurTypeEnum } from './utils'
 
 /**
- * DinosaurWelcomeScreen
+ * DinoStartScreen
  * Figma reference node 3:42 ("Agujaceratops-0") adapted.
  * Props allow re-use for any dinosaur by swapping name, description, and pose asset.
  */
-export interface DinosaurWelcomeScreenProps {
+export interface DinoStartScreenProps {
     dinoName: string
     dinoId: DinosaurTypeEnum
     description?: string
 }
 
-export const DinosaurWelcomeScreen: React.FC<DinosaurWelcomeScreenProps> = ({
+export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
     dinoId,
     dinoName,
     description = 'You are an adult, and you are currently without a herd. You will need to find food and choose how to interact with other animals all by yourself!',
 }) => {
-    const pose = `/DinoWelcomeAssets/podium_${dinoId}.png`
+    const pose = `/DinoWelcomeAssets/podium_${dinoId.toLocaleLowerCase()}.png`
 
     const onPlay = () => {
         window.location.href = `/${dinoName.toLowerCase()}`

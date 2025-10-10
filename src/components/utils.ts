@@ -2,8 +2,8 @@ import { FinalDinosaurState } from './FinalScreen'
 
 export const determineDinoFinalState = (reaction: string = '') => {
     if (['Dead with Injury', 'dead'].includes(reaction)) {
-        return FinalDinosaurState.BAD
-    } else if (['neutral', 'injured'].includes(reaction)) {
+        return FinalDinosaurState.DEAD
+    } else if (['neutral', 'injured', 'afraid'].includes(reaction)) {
         return FinalDinosaurState.NEUTRAL
     } else {
         return FinalDinosaurState.GOOD
@@ -12,10 +12,14 @@ export const determineDinoFinalState = (reaction: string = '') => {
 
 export const determineDinoImage = (
     dinoId: DinosaurTypeEnum,
-    reaction: string = 'neutral'
+    reaction: string = 'neutral',
+    isFinal?: boolean
 ) => {
     let formattedReaction = reaction
     switch (reaction.toLowerCase()) {
+        case 'afraid':
+            formattedReaction = 'afraid'
+            break
         case 'dead':
             formattedReaction = 'dead'
             break
@@ -34,7 +38,7 @@ export const determineDinoImage = (
         default:
             formattedReaction = 'neutral'
     }
-    return `${dinoId}Reactions/${dinoId.toString().toLowerCase()}_${formattedReaction}.png`
+    return `${dinoId}${isFinal ? 'Final' : ''}Reactions/${dinoId.toString().toLowerCase()}${isFinal ? '_FinalReaction' : ''}_${formattedReaction}.${isFinal ? 'webp' : 'png'}`
 }
 
 export enum DinosaurTypeEnum {

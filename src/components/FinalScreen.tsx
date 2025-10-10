@@ -1,10 +1,14 @@
 import React from 'react'
-import { determineDinoImage, DinosaurTypeEnum } from './utils'
+import {
+    determineDinoFinalState,
+    determineDinoImage,
+    DinosaurTypeEnum,
+} from './utils'
 
 export enum FinalDinosaurState {
-    GOOD,
-    NEUTRAL,
-    BAD,
+    GOOD = 'Good',
+    NEUTRAL = 'Neutral',
+    DEAD = 'Dead',
 }
 
 /**
@@ -15,30 +19,25 @@ export enum FinalDinosaurState {
 export interface FinalScreenProps {
     /** Center message shown below the character */
     message: string
-    state: FinalDinosaurState
     dinosaurType: DinosaurTypeEnum
     onRestart?: () => void
     reaction: string
 }
 
-export const determineBackground = (state: FinalDinosaurState) => {
-    switch (state) {
-        case FinalDinosaurState.GOOD:
-            return 'finalSlide_good.png'
-        case FinalDinosaurState.NEUTRAL:
-            return 'finalSlide_neutral.png'
-        case FinalDinosaurState.BAD:
-            return 'finalSlide_dead.png'
-    }
+export const determineBackground = (
+    state: FinalDinosaurState,
+    dinoId: DinosaurTypeEnum
+) => {
+    return `${dinoId}FinalScenes/${dinoId}FinalScene_${state}.webp`
 }
 
 export const FinalScreen: React.FC<FinalScreenProps> = ({
     message,
-    state,
     onRestart,
     dinosaurType,
     reaction,
 }) => {
+    const state = determineDinoFinalState(reaction)
     return (
         <div
             className="relative w-screen h-screen overflow-hidden font-archivo text-white select-none"
@@ -49,14 +48,14 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
             <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{
-                    backgroundImage: `url(DinoFinalAssets/${determineBackground(state)})`,
+                    backgroundImage: `url(${determineBackground(state, dinosaurType)})`,
                 }}
                 aria-hidden="true"
             />
 
             <img
                 className="absolute top-[156px] left-1/2 -translate-x-1/2 w-[783px] h-[685px] "
-                src={determineDinoImage(dinosaurType, reaction)}
+                src={determineDinoImage(dinosaurType, reaction, true)}
             />
 
             {/* Message */}

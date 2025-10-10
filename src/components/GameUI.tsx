@@ -6,7 +6,7 @@ import DinosaurOnChoiceScreen from './DinosaurOnChoiceScreen'
 import { ChoiceOverlay } from './ChoiceOverlay'
 import { ControlButtons } from './ControlButtons'
 import { FinalScreen } from './FinalScreen'
-import { determineDinoFinalState, DinosaurTypeEnum } from './utils'
+import { DinosaurTypeEnum } from './utils'
 
 // Create a client-side only version of GameEngine by extending the base GameEngine
 class WebGameEngine extends GameEngine {
@@ -155,7 +155,6 @@ export const GameUI: React.FC<GameUIProps> = ({
         return (
             <FinalScreen
                 message={currentNode.Content}
-                state={determineDinoFinalState(currentNode['reaction label'])}
                 dinosaurType={dinosaurType}
                 onRestart={resetGame}
                 reaction={currentNode['reaction label'] ?? ''}
