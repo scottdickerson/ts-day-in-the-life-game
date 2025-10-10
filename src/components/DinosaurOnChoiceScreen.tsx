@@ -43,6 +43,7 @@ const DinosaurOnGameScreen: React.FC<DinosaurOnGameScreenProps> = ({
     return (
         <img
             src={src}
+            key={reactionLabel} // this is to restart the animation when the reaction changes
             alt={reactionLabel}
             className={REACTION_ANIMATIONS[reactionLabel]}
             style={{

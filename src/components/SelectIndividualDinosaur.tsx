@@ -54,7 +54,7 @@ export const SelectIndividualDinosaur: React.FC<
                 ['--float-duration' as string]: `${randomDuration}s`,
                 ['--float-delay' as string]: `${randomDelay}s`,
             }}
-            className={`relative flex flex-col items-center animate-float ${className}`}
+            className={`relative flex flex-col items-center animate-float ${className} aspect-[189/178]`}
         >
             <img
                 src={image}

@@ -1,5 +1,3 @@
-- Update with correct buttons
 - Handle eating picture if there's a specific one
 - Overlap the text and change the font on the attract screen
-- Make platforms for dinos hover animation
-- Screen transition between screens
+- Missing background scenes

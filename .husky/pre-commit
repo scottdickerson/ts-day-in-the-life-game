@@ -14,7 +14,7 @@ npm run lint
 
 # Check scene image consistency
 echo "🎬 Validating scene images..."
-npm run check-scenes
+npm run check-scenes 
 
 # If we got this far, then all checks passed!
 echo "✅ All checks passed!"

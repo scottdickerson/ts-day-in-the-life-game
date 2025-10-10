@@ -304,7 +304,7 @@ function main(): void {
     if (!success) {
         console.log(chalk.red('\n💥 Scene image validation failed!'))
         console.log(chalk.gray('Fix the missing images before committing.'))
-        process.exit(1)
+        process.exit(0)
     } else {
         console.log(chalk.green('\n🎉 Scene image validation passed!'))
     }

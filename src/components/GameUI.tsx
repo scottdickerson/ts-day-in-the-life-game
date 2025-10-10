@@ -184,7 +184,8 @@ export const GameUI: React.FC<GameUIProps> = ({
             <DinosaurOnChoiceScreen
                 dinosaurType={dinosaurType}
                 reactionLabel={
-                    currentNode['reaction label'] ?? DinosaurReaction.NEUTRAL
+                    (currentNode['reaction label'] as DinosaurReaction) ??
+                    DinosaurReaction.NEUTRAL
                 }
             />
         </div>
