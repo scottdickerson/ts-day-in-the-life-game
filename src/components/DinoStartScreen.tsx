@@ -1,26 +1,51 @@
 import React from 'react'
-import type { DinosaurTypeEnum } from './utils'
+import { SelectIndividualDinosaur } from './SelectIndividualDinosaur'
+import type { DinoOverview } from '@/data/siteData'
+import { dinos } from '@/data/siteData'
 
 /**
  * DinoStartScreen
  * Figma reference node 3:42 ("Agujaceratops-0") adapted.
  * Props allow re-use for any dinosaur by swapping name, description, and pose asset.
  */
-export interface DinoStartScreenProps {
-    dinoName: string
-    dinoId: DinosaurTypeEnum
-    description?: string
-}
+export interface DinoStartScreenProps extends DinoOverview {}
 
-export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
-    dinoId,
-    dinoName,
-    description = 'You are an adult, and you are currently without a herd. You will need to find food and choose how to interact with other animals all by yourself!',
-}) => {
-    const pose = `/DinoWelcomeAssets/podium_${dinoId.toLocaleLowerCase()}.png`
+export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
+    const { id, name, description } = dino
+    const pose = `/DinoWelcomeAssets/podium_${id.toLocaleLowerCase()}.png`
+    const [isAnimating, setIsAnimating] = React.useState(true)
+    const [finalPosition, setFinalPosition] = React.useState<{
+        x: number
+        y: number
+        scale: number
+    } | null>(null)
+    const hiddenDinoRef = React.useRef<HTMLDivElement>(null)
+    const finalPositionRef = React.useRef<HTMLDivElement>(null)
+
+    React.useEffect(() => {
+        // Calculate the final position where the dinosaur should end up
+        if (hiddenDinoRef.current && finalPositionRef.current) {
+            const hiddenRect = hiddenDinoRef.current.getBoundingClientRect()
+            const finalRect = finalPositionRef.current.getBoundingClientRect()
+
+            // Calculate the offset from start position to final position
+            const deltaX = finalRect.right - hiddenRect.left - 750 / 2
+            const deltaY = finalRect.top - hiddenRect.top + 750 / 4
+            const scale = 750 / 450 // End at welcome screen size (750) vs start size (450)
+
+            setFinalPosition({ x: deltaX, y: deltaY, scale })
+
+            // Start the animation after a brief delay
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    setIsAnimating(false)
+                })
+            })
+        }
+    }, [])
 
     const onPlay = () => {
-        window.location.href = `/${dinoName.toLowerCase()}`
+        window.location.href = `/${name.toLowerCase()}`
     }
     const onBack = () => {
         window.location.href = '/select'
@@ -28,6 +53,60 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
 
     return (
         <div className="relative w-screen h-screen overflow-hidden font-archivo">
+            {/* Empty reference div to calculate final position */}
+            <div
+                ref={finalPositionRef}
+                className="absolute left-1/2 top-[180px] -translate-x-[5%] z-20 pointer-events-none opacity-0"
+                aria-hidden="true"
+            >
+                <div style={{ width: '948px', height: '750px' }} />
+            </div>
+
+            {/* Hidden layout copy of DinoSelectScreen for positioning reference */}
+            <div
+                className="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div className="text-center mb-8 mt-16 opacity-0">
+                    <h1 className="text-[65px] font-archivo font-bold text-[#F5F5F5] mb-4 drop-shadow-lg">
+                        Choose a Creature
+                    </h1>
+                </div>
+                <div className="flex flex-wrap gap-[120px] gap-y-0 justify-center items-center px-[40px]">
+                    {dinos.map((d, index) => (
+                        <div
+                            key={d.id}
+                            className={`${index >= 3 ? '-translate-y-20' : '-translate-y-10'} relative`}
+                        >
+                            {/* Only render the matching dinosaur, hide others */}
+                            {d.id === dino.id ? (
+                                <div
+                                    ref={hiddenDinoRef}
+                                    className="transition-all duration-1000 ease-out"
+                                    style={{
+                                        transform:
+                                            finalPosition && !isAnimating
+                                                ? `translate(${finalPosition.x}px, ${finalPosition.y}px) scale(${finalPosition.scale})`
+                                                : 'translate(0, 0) scale(1)',
+                                    }}
+                                >
+                                    <SelectIndividualDinosaur
+                                        {...d}
+                                        height={450}
+                                        showName={false}
+                                        enableViewTransition={false}
+                                    />
+                                </div>
+                            ) : (
+                                <div
+                                    style={{ height: '450px', width: '200px' }}
+                                />
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             {/* Background layers */}
             <div
                 className="absolute inset-0 bg-center bg-cover -z-10"
@@ -44,8 +123,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
                         You are an
                         <br />
                         <span className="italic">
-                            {dinoName.slice(0, 1).toUpperCase() +
-                                dinoName.slice(1)}
+                            {name.slice(0, 1).toUpperCase() + name.slice(1)}
                         </span>
                         !
                     </h2>
@@ -67,25 +145,6 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
                     >
                         Choose a new animal
                     </button>
-                </div>
-            </div>
-
-            {/* Pose + platform shadow */}
-            <div className="absolute left-1/2 top-[180px] -translate-x-[5%]">
-                <div className="relative w-[948px] h-[569px] z-20">
-                    <img
-                        src={pose}
-                        alt={dinoId.toString()}
-                        className="absolute inset-0 w-full h-full object-contain drop-shadow-[0_12px_32px_rgba(0,0,0,0.45)] pointer-events-none select-none"
-                        draggable={false}
-                    />
-                </div>
-                <div className="relative mt-[-60px] w-[720px] ml-[80px]">
-                    <img
-                        src="DinoWelcomeAssets/podium.svg"
-                        alt=""
-                        className="w-full h-auto opacity-90"
-                    />
                 </div>
             </div>
         </div>

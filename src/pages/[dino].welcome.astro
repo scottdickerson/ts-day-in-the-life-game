@@ -3,7 +3,6 @@ import type { GetStaticPaths } from 'astro'
 import Layout from '../layouts/Layout.astro'
 import { DinoStartScreen } from '../components/DinoStartScreen'
 import { dinos } from '@/data/siteData'
-import type { DinosaurTypeEnum } from '@/components/utils'
 
 // Extract dino param from the URL path
 const { dino } = Astro.params
@@ -13,15 +12,11 @@ export const getStaticPaths = (() => {
     }))
 }) satisfies GetStaticPaths
 
-const dinoURL =
-    dinos.find((dinoToMatch) => dinoToMatch.id.toLocaleLowerCase() === dino)
-        ?.name ?? ''
+const matchingDino =
+    dinos.find((dinoToMatch) => dinoToMatch.id.toLocaleLowerCase() === dino) ??
+    dinos[0]
 ---
 
-<Layout title={`Welcome ${dinoURL}`}>
-    <DinoStartScreen
-        client:only="react"
-        dinoName={dinoURL}
-        dinoId={dino as DinosaurTypeEnum}
-    />
+<Layout title={`Welcome ${matchingDino?.name ?? ''}`}>
+    <DinoStartScreen client:only="react" {...matchingDino} />
 </Layout>

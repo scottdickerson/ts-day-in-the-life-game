@@ -62,7 +62,7 @@ export const determineDinoImage = (
             break
         case DinosaurReaction.EATING.toLowerCase():
             // TODO: need picture for eating
-            formattedReaction = 'neutral'
+            formattedReaction = 'happy'
             break
         default:
             formattedReaction = 'neutral'

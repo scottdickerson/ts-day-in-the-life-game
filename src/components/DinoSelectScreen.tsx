@@ -1,6 +1,7 @@
 // Figma-inspired DinoSelectScreen (node 3-675)
 import { dinos } from '@/data/siteData'
 import React from 'react'
+import { SelectIndividualDinosaur } from './SelectIndividualDinosaur'
 
 /**
  *
@@ -14,25 +15,13 @@ export const DinoSelectScreen: React.FC = () => (
             </h1>
         </div>
         <div className="flex flex-wrap gap-[120px] gap-y-0 justify-center items-center px-[40px]">
-            {dinos.map((dino) => (
+            {dinos.map((dino, index) => (
                 <a
                     key={dino.id}
                     href={`/${dino.id.toLowerCase()}.welcome`}
-                    className="flex flex-col items-center -translate-y-10 hover:scale-105 transition cursor-pointer no-underline relative "
+                    className={`${index >= 3 ? '-translate-y-20' : '-translate-y-10'} hover:scale-105 transition cursor-pointer no-underline relative`}
                 >
-                    <img
-                        src={dino.image}
-                        alt={dino.name}
-                        className="h-[356px] object-contain z-10"
-                        draggable={false}
-                    />
-                    <img
-                        src="SelectedIndividualScreenAssets/dropShadow.svg"
-                        className="absolute -bottom-2 -left-2 -right-2 w-full"
-                    />
-                    <span className="pt-2 text-[45px] font-archivo font-semibold text-[#F5F5F5] tracking-wide drop-shadow italic">
-                        {dino.name}
-                    </span>
+                    <SelectIndividualDinosaur {...dino} />
                 </a>
             ))}
         </div>

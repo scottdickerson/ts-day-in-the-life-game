@@ -1,9 +1,34 @@
 import React from 'react'
-import { determineDinoImage, type DinosaurTypeEnum } from './utils'
+import {
+    determineDinoImage,
+    DinosaurReaction,
+    type DinosaurTypeEnum,
+} from './utils'
 
 interface DinosaurOnGameScreenProps {
     dinosaurType: DinosaurTypeEnum
-    reactionLabel: string
+    reactionLabel: DinosaurReaction
+}
+
+const wigglingAnimation =
+    'animate-wiggle animate-once animate-duration-[3000ms] animate-ease-linear animate-normal animate-fill-forwards'
+const nervousAnimation =
+    'animate-shake animate-once animate-duration-[3000ms] animate-ease-linear animate-normal animate-fill-forwards'
+const deadAnimation =
+    'animate-once animate-duration-1000 animate-ease-out animate-normal'
+
+const REACTION_ANIMATIONS: Record<DinosaurReaction, string> = {
+    [DinosaurReaction.HAPPY]: wigglingAnimation,
+    [DinosaurReaction.INJURED]: nervousAnimation,
+    [DinosaurReaction.AFRAID]: nervousAnimation,
+    [DinosaurReaction.FLIRTACIOUS]: wigglingAnimation,
+    [DinosaurReaction.FLIRTY]: wigglingAnimation,
+    [DinosaurReaction.EATING]: wigglingAnimation,
+    [DinosaurReaction.DEAD]: deadAnimation,
+    [DinosaurReaction.DEAD_WITH_INJURY]: deadAnimation,
+    [DinosaurReaction.NEUTRAL]: '',
+    [DinosaurReaction.EMPTY]: '',
+    [DinosaurReaction.DASH]: '',
 }
 
 /**
@@ -19,7 +44,7 @@ const DinosaurOnGameScreen: React.FC<DinosaurOnGameScreenProps> = ({
         <img
             src={src}
             alt={reactionLabel}
-            className=""
+            className={REACTION_ANIMATIONS[reactionLabel]}
             style={{
                 position: 'absolute',
                 bottom: 0,

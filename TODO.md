@@ -1,6 +1,5 @@
-- Fix dyno images with only shadow underneath looking bad
-- Add NPC B rendered animal
-- Test storybook stories with all the various permutations
-- Adjust the Podium picture crops so they sit on the podium correctly
-- Do they all really have the same content on the StartScreen (herd, ie)
-- Final screen needs circles around images and debugging
+- Update with correct buttons
+- Handle eating picture if there's a specific one
+- Overlap the text and change the font on the attract screen
+- Make platforms for dinos hover animation
+- Screen transition between screens

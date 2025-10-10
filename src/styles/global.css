@@ -1,6 +1,56 @@
+@import 'tailwindcss-animated';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* View Transitions API Customization */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+    animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+    animation-name: fade-in;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating animation for dinosaurs */
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(calc(var(--float-height, -15px) * -1));
+    }
+}
+
+.animate-float {
+    animation: float var(--float-duration, 4s) ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;

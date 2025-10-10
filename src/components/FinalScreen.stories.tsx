@@ -27,7 +27,7 @@ type Story = StoryObj<typeof meta>
 
 export const Good: Story = {
     args: {
-        reaction: DinosaurReaction.AFRAID,
+        reaction: DinosaurReaction.HAPPY,
     },
 }
 export const Neutral: Story = {

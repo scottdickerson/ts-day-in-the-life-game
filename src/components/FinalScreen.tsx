@@ -11,6 +11,9 @@ export enum FinalDinosaurState {
     DEAD = 'Dead',
 }
 
+const jumpInAnimation =
+    'animate-jump-in animate-once animate-duration-1000 animate-ease-out animate-normal'
+
 /**
  * FinalScreen component
  * Based on Figma node 3:710 (end-of-path screen)
@@ -53,10 +56,12 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
                 aria-hidden="true"
             />
 
-            <img
-                className="absolute top-[156px] left-1/2 -translate-x-1/2 w-[783px] h-[685px] "
-                src={determineDinoImage(dinosaurType, reaction, true)}
-            />
+            <div className="absolute top-[156px] w-full">
+                <img
+                    className={`mx-auto w-[783px] h-[685px] ${jumpInAnimation}`}
+                    src={determineDinoImage(dinosaurType, reaction, true)}
+                />
+            </div>
 
             {/* Message */}
             <div className="absolute left-1/2 top-[950px] -translate-x-1/2 -translate-y-1/2 w-[1350px] flex flex-col justify-center text-center">

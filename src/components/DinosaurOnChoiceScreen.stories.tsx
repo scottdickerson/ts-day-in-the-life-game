@@ -26,11 +26,20 @@ type Story = StoryObj<typeof meta>
 
 export const Neutral: Story = {}
 export const Happy: Story = { args: { reactionLabel: DinosaurReaction.HAPPY } }
+
+export const Eating: Story = {
+    args: { reactionLabel: DinosaurReaction.EATING },
+}
+
 export const Afraid: Story = {
     args: { reactionLabel: DinosaurReaction.AFRAID },
 }
+
 export const Flirty: Story = {
     args: { reactionLabel: DinosaurReaction.FLIRTY },
+}
+export const Flirtacious: Story = {
+    args: { reactionLabel: DinosaurReaction.FLIRTACIOUS },
 }
 export const Injured: Story = {
     args: { reactionLabel: DinosaurReaction.INJURED },
