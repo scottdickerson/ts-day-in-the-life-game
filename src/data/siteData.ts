@@ -8,26 +8,26 @@ export const dinos = [
     {
         id: 'Aguja',
         name: 'Agujaceratops',
-        image: '/SelectScreenAssets/Aguja.png',
+        image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Aguja.webp',
     },
     {
         id: 'Krito',
         name: 'Kritosaurus',
-        image: '/SelectScreenAssets/Krito.png',
+        image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Krito.webp',
     },
     {
         id: 'Tyranno',
         name: 'Tyrannosaurus',
-        image: '/SelectScreenAssets/Tyranno.png',
+        image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Tyranno.webp',
     },
     {
         id: 'Mosa',
         name: 'Mosasaurus',
-        image: '/SelectScreenAssets/Mosa.png',
+        image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Mosa.webp',
     },
     {
         id: 'Protos',
         name: 'Protohadros',
-        image: '/SelectScreenAssets/Protos.png',
+        image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Proto.webp',
     },
 ]
