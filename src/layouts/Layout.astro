@@ -3,6 +3,7 @@
 import '../styles/global.css'
 import { SendToAttractScreen } from '../components/SendToAttractScreen'
 import { ClientRouter } from 'astro:transitions'
+import { ArduinoStartAndDinoSelectListener } from '@/components/ArduinoStartAndDinoSelectListener'
 
 interface Props {
     title: string
@@ -30,7 +31,8 @@ const { title } = Astro.props
     </head>
     <body>
         <main>
-            <SendToAttractScreen />
+            <SendToAttractScreen client:only="react" />
+            <ArduinoStartAndDinoSelectListener client:only="react" />
             <slot />
         </main>
     </body>

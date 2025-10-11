@@ -104,7 +104,12 @@ export const GameUI: React.FC<GameUIProps> = ({
             setNodeHistory((prev) => [...prev, currentNode['Code ID']])
         }
 
-        gameEngine.moveToNextNode(choice)
+        if (currentNode && currentNode['choice 1'] && currentNode['choice 2']) {
+            gameEngine.moveToNextNode(choice)
+        } else {
+            handleMoveToLastNode()
+        }
+
         const node = gameEngine.returnCurrentNode()
         setCurrentNode(node)
 
@@ -170,7 +175,7 @@ export const GameUI: React.FC<GameUIProps> = ({
                 dinosaurType={dinosaurType}
                 codeId={currentNode['Code ID']}
             />
-            <ControlButtons onBack={handleBack} />
+            <ControlButtons onBack={handleBack} onChoice={handleChoice} />
 
             <ChoiceOverlay
                 currentNode={currentNode}

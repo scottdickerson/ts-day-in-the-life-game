@@ -3,6 +3,7 @@ import type { DinoOverview } from '@/data/siteData'
 import { DinoGrid } from './DinoGrid'
 import { Button1 } from './ui/Button1'
 import { Button2 } from './ui/Button2'
+import { useArduinoButtons } from '@/hooks/useArduinoButtons'
 
 /**
  * DinoStartScreen
@@ -51,6 +52,18 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
     const onBack = () => {
         window.location.href = '/select'
     }
+
+    useArduinoButtons({
+        onButtonPress: (button, type) => {
+            if (type === 'choice') {
+                if (button === 2) {
+                    onBack()
+                } else if (button === 1) {
+                    onPlay()
+                }
+            }
+        },
+    })
 
     return (
         <div className="relative w-screen h-screen overflow-hidden font-archivo">
