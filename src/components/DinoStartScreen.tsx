@@ -14,8 +14,6 @@ export interface DinoStartScreenProps extends DinoOverview {}
 
 export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
     const { id, name, description } = dino
-    const pose = `/DinoWelcomeAssets/podium_${id.toLocaleLowerCase()}.png`
-    const [isAnimating, setIsAnimating] = React.useState(true)
     const [finalPosition, setFinalPosition] = React.useState<{
         x: number
         y: number
@@ -36,13 +34,6 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
             const scale = 750 / 450 // End at welcome screen size (750) vs start size (450)
 
             setFinalPosition({ x: deltaX, y: deltaY, scale })
-
-            // Start the animation after a brief delay
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    setIsAnimating(false)
-                })
-            })
         }
     }, [])
 

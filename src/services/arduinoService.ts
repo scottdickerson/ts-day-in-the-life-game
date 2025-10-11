@@ -1,7 +1,6 @@
 import { SerialPort } from 'serialport'
 import { ReadlineParser } from '@serialport/parser-readline'
 import { EventEmitter } from 'events'
-import { DinosaurTypeEnum } from '@/components/utils'
 
 export interface ArduinoButtonEvent {
     button: number

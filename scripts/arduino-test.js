@@ -66,7 +66,6 @@ async function testArduinoConnection() {
                 const parts = message.split(':')
                 if (parts.length === 3) {
                     const buttonNumber = parseInt(parts[1])
-                    const timestamp = parseInt(parts[2])
 
                     const buttonNames = [
                         'Choice 1',

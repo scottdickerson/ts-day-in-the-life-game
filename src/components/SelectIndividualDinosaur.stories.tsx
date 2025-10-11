@@ -29,7 +29,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 // Get dinosaur data from siteData
-const [aguja, krito, tyranno, mosa, protos] = dinos
+const [aguja] = dinos
 
 export const SelectScreenStyle: Story = {
     args: {

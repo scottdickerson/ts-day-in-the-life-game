@@ -52,7 +52,6 @@ export const GET: APIRoute = async ({ request }) => {
             const onButtonPress = (event: ArduinoButtonEvent) => {
                 console.log('🔘 Arduino button pressed', event)
                 sendEvent({
-                    type: 'buttonPress',
                     ...event,
                 })
             }
