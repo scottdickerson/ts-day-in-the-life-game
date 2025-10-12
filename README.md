@@ -6,6 +6,8 @@ This project requires `git lfs` to be installed. If you don't have it installed,
 
 This project supports physical Arduino buttons for enhanced gameplay interaction. The game can be played with both UI buttons and physical Arduino buttons simultaneously.
 
+I had to use the serialport package to listen to the arduino instead of the johnny-five package because the Firmata firmware required by the johnny-five package not working with the latest Arduino Uno I am using.
+
 ### Arduino Setup
 
 **Hardware Requirements:**
