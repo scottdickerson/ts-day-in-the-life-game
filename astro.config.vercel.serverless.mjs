@@ -1,15 +1,20 @@
+/**
+ * Copy this version over to astro.config.mjs to run the server on vercel (No arduino connection)
+ */
+
 import { defineConfig } from 'astro/config'
-import solidJs from '@astrojs/solid-js'
+import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
-import vercel from '@astrojs/vercel/serverless'
+import vercel from '@astrojs/vercel'
 
 // https://astro.build/config
 export default defineConfig({
+    // Enable React to support React JSX components.
     integrations: [
-        solidJs({
-            devtools: true,
+        react(),
+        tailwind({
+            applyBaseStyles: false,
         }),
-        tailwind(),
     ],
     output: 'server',
     adapter: vercel(),
