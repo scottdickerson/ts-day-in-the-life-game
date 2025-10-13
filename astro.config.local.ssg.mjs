@@ -1,15 +1,17 @@
+// @ts-check
 import { defineConfig } from 'astro/config'
-import solidJs from '@astrojs/solid-js'
+import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
-// import vercel from '@astrojs/vercel/serverless'
 
 // https://astro.build/config
 export default defineConfig({
+    // Enable React to support React JSX components.
     integrations: [
-        solidJs({
-            devtools: true,
+        react(),
+        tailwind({
+            applyBaseStyles: false,
         }),
-        tailwind(),
     ],
     output: 'static',
+    // By default we're building a static site generation for building local html files that can be served with nginx however by copying the astro.config.vercel.serverless.mjs file to astro.config.mjs we can change the output to serverless.
 })

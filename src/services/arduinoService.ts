@@ -20,9 +20,28 @@ export class ArduinoService extends EventEmitter {
         this.setupGracefulShutdown()
     }
 
+    private isServerlessEnvironment(): boolean {
+        return !!(
+            process.env.VERCEL ||
+            process.env.AWS_LAMBDA_FUNCTION_NAME ||
+            process.env.AZURE_FUNCTIONS_WORKER_RUNTIME ||
+            process.env.FUNCTIONS_EMULATOR ||
+            (process.env.NODE_ENV === 'production' && !process.env.ARDUINO_PORT)
+        )
+    }
+
     async initialize(): Promise<boolean> {
         if (this.isInitialized || this.isConnecting) {
             return this.isInitialized
+        }
+
+        // Check if running in serverless environment
+        if (this.isServerlessEnvironment()) {
+            console.log(
+                '☁️ Running in serverless environment - Arduino disabled'
+            )
+            this.isInitialized = true
+            return false // Arduino not available
         }
 
         this.isConnecting = true

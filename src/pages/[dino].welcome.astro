@@ -4,6 +4,8 @@ import Layout from '../layouts/Layout.astro'
 import { DinoStartScreen } from '../components/DinoStartScreen'
 import { dinos } from '@/data/siteData'
 
+export const prerender = true
+
 // Extract dino param from the URL path
 const { dino } = Astro.params
 export const getStaticPaths = (() => {
