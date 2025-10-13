@@ -4,6 +4,8 @@ import {
     type ArduinoButtonEvent,
 } from '../../services/arduinoService'
 
+export const prerender = false
+
 export const GET: APIRoute = async ({ request }) => {
     // Set up SSE headers
     const headers = new Headers({
