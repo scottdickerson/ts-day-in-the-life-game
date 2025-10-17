@@ -18,6 +18,10 @@ export interface DinoGridProps {
      * Additional className for the grid container
      */
     className?: string
+    /**
+     * When true, applies transition animations to the selected dinosaur
+     */
+    shouldAnimate?: boolean
 }
 
 /**
@@ -36,6 +40,7 @@ export const DinoGrid: React.FC<DinoGridProps> = ({
     selectedDinoRef,
     transformStyle,
     className = '',
+    shouldAnimate = true,
 }) => {
     const showAllDinos = !selectedDinoId
 
@@ -68,7 +73,11 @@ export const DinoGrid: React.FC<DinoGridProps> = ({
                                                 ? selectedDinoRef
                                                 : undefined
                                         }
-                                        className="transition-all duration-1000 ease-out"
+                                        className={
+                                            shouldAnimate
+                                                ? 'transition-all duration-1000 ease-out'
+                                                : ''
+                                        }
                                         style={
                                             isSelected
                                                 ? transformStyle

@@ -1,9 +1,5 @@
-- Handle eating picture if there's a specific one
-- Add background movie on main screen and select screen background updates
-- Improve loading game data screen to keep showing the DinoGrid while loading the game data (instead of white screening)?
-- Get final Start button image, determine whether to show a start button on the final page
-- Programmatically determine whether to render the extra buttons and debug info on the game screen based on whether we're in Arduino mode or not, because we need the extra buttons to control the game without the Arduino
-
+- Update select screen background updates
+- Remove debug info from game screen on game UI, and back restart controls
 - Missing background scenes
 
 ```

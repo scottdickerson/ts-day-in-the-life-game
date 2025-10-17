@@ -4,7 +4,6 @@ import {
     determineDinoImage,
     DinosaurTypeEnum,
 } from './utils'
-import { StartButton } from './ui/StartButton'
 
 export enum FinalDinosaurState {
     GOOD = 'Good',
@@ -43,10 +42,11 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
 }) => {
     const state = determineDinoFinalState(reaction)
     return (
-        <div
-            className="relative w-screen h-screen overflow-hidden font-archivo text-white select-none"
+        <a
+            className="block relative w-screen h-screen overflow-hidden font-archivo text-white select-none"
             role="group"
             aria-label="Final outcome"
+            href="/"
         >
             {/* Background environment */}
             <div
@@ -71,15 +71,15 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
                 </p>
             </div>
             <div className="absolute bottom-[86px] right-[144px]">
-                <StartButton
+                {/* <StartButton
                     onClick={onRestart}
                     variant="secondary"
                     className="!px-4 !py-4 !text-2xl"
                 >
                     Start
                     <img src="DinoFinalAssets/restart.svg" alt="Restart" />
-                </StartButton>
+                </StartButton> */}
             </div>
-        </div>
+        </a>
     )
 }

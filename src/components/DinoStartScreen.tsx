@@ -10,9 +10,14 @@ import { useArduinoButtons } from '@/hooks/useArduinoButtons'
  * Figma reference node 3:42 ("Agujaceratops-0") adapted.
  * Props allow re-use for any dinosaur by swapping name, description, and pose asset.
  */
-export interface DinoStartScreenProps extends DinoOverview {}
+export interface DinoStartScreenProps extends DinoOverview {
+    shouldAnimate?: boolean
+}
 
-export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
+export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
+    shouldAnimate = false,
+    ...dino
+}) => {
     const { id, name, description } = dino
     const [finalPosition, setFinalPosition] = React.useState<{
         x: number
@@ -72,6 +77,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = (dino) => {
                 selectedDinoId={id}
                 selectedDinoRef={hiddenDinoRef}
                 className="absolute inset-0 pointer-events-none"
+                shouldAnimate={shouldAnimate}
                 transformStyle={{
                     transform: finalPosition
                         ? `translate(${finalPosition.x}px, ${finalPosition.y}px) scale(${finalPosition.scale})`

@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro'
 import { DinoStartScreen } from '../components/DinoStartScreen'
 import { dinos } from '@/data/siteData'
 
-export const prerender = true
+export const prerender = false
 
 // Extract dino param from the URL path
 const { dino } = Astro.params
@@ -17,8 +17,17 @@ export const getStaticPaths = (() => {
 const matchingDino =
     dinos.find((dinoToMatch) => dinoToMatch.id.toLocaleLowerCase() === dino) ??
     dinos[0]
+
+// Check if we should animate based on referrer, otherwise it doesn't make much sense
+const referer = Astro.request.headers.get('referer') || ''
+console.log('referer', referer)
+const shouldAnimate = referer.includes('/select') || referer.endsWith('/select')
 ---
 
 <Layout title={`Welcome ${matchingDino?.name ?? ''}`}>
-    <DinoStartScreen client:only="react" {...matchingDino} />
+    <DinoStartScreen
+        client:only="react"
+        {...matchingDino}
+        shouldAnimate={shouldAnimate}
+    />
 </Layout>
