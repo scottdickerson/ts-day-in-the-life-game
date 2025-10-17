@@ -25,7 +25,7 @@ I had to use the serialport package to listen to the arduino instead of the john
 - Button 4 (Kritosaurus): Connect one terminal to Arduino pin 5, other terminal to GND
 - Button 5 (Tyrannosaurus): Connect one terminal to Arduino pin 6, other terminal to GND
 - Button 6 (Mosasaurus): Connect one terminal to Arduino pin 7, other terminal to GND
-- Button 7 (Protohadros): Connect one terminal to Arduino pin 8, other terminal to GND
+- Button 7 (Protostega): Connect one terminal to Arduino pin 8, other terminal to GND
 - Button 8 (Start/Select): Connect one terminal to Arduino pin 9, other terminal to GND
 - The code uses internal pullup resistors, so no external resistors are required
 
@@ -44,7 +44,7 @@ I had to use the serialport package to listen to the arduino instead of the john
 - Physical Button 4 (pin 5) = Navigate to Kritosaurus game
 - Physical Button 5 (pin 6) = Navigate to Tyrannosaurus game
 - Physical Button 6 (pin 7) = Navigate to Mosasaurus game
-- Physical Button 7 (pin 8) = Navigate to Protohadros game
+- Physical Button 7 (pin 8) = Navigate to Protostega game
 - Physical Button 8 (pin 9) = Navigate to Start/Select screen
 - UI buttons continue to work as fallback if Arduino is not connected
 - Game works normally without Arduino - no setup required for basic usage

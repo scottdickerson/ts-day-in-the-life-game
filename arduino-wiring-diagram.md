@@ -17,7 +17,7 @@ This diagram shows how to wire 8 buttons to an Arduino Uno for the Dinosaur Choo
 - **Button 4 (Pin 5)**: Kritosaurus (Krito)
 - **Button 5 (Pin 6)**: Tyrannosaurus (Tyranno)
 - **Button 6 (Pin 7)**: Mosasaurus (Mosa)
-- **Button 7 (Pin 8)**: Protohadros (Protos)
+- **Button 7 (Pin 8)**: Protostega (Protos)
 
 ### Navigation Button
 
@@ -49,7 +49,7 @@ Arduino Pin 4  → Agujaceratops Button
 Arduino Pin 5  → Kritosaurus Button
 Arduino Pin 6  → Tyrannosaurus Button
 Arduino Pin 7  → Mosasaurus Button
-Arduino Pin 8  → Protohadros Button
+Arduino Pin 8  → Protostega Button
 Arduino Pin 9  → Start/Select Button
 ```
 

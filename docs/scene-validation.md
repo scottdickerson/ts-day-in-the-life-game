@@ -21,7 +21,7 @@ The script checks these dinosaurs:
 | Kritosaurus   | `Kritosaurus.json`   | `KritoScenes/`   | `exported`          |
 | Tyrannosaurus | `Tyrannosaurus.json` | `TyrannoScenes/` | `exported`          |
 | Mosasaurus    | `Mosasaurus.json`    | `MosaScenes/`    | `exportedForReview` |
-| Protohadros   | `Protes.json`        | `ProtosScenes/`  | `exportedForReview` |
+| Protostega    | `Protes.json`        | `ProtosScenes/`  | `exportedForReview` |
 
 ## Usage
 
@@ -49,7 +49,7 @@ Validating that all exported story scenes have corresponding background images..
 🦕 Checking Kritosaurus...
 🦕 Checking Tyrannosaurus...
 🦕 Checking Mosasaurus...
-🦕 Checking Protohadros...
+🦕 Checking Protostega...
 
 📊 SCENE IMAGE ANALYSIS REPORT
 =====================================

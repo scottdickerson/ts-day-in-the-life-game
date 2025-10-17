@@ -38,7 +38,7 @@ export const dinos: DinoOverview[] = [
     },
     {
         id: DinosaurTypeEnum.Protos,
-        name: 'Protohadros',
+        name: 'Protostega',
         image: '/SelectedIndividualScreenAssets/SelectedIndividualScreenAssets-Proto.webp',
         description:
             'You are a mature Protostega, measuring 8 feet long from nose to tail.',

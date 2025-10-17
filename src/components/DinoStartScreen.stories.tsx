@@ -53,10 +53,10 @@ export const Mosasaurus: Story = {
     },
 }
 
-export const Protohadros: Story = {
+export const Protostega: Story = {
     args: {
         ...dinos.find((dino) => dino.id === DinosaurTypeEnum.Protos)!,
         description:
-            'You are a Protohadros living in a coastal environment. You will need to find food and avoid dangerous predators.',
+            'You are a Protostega living in a coastal environment. You will need to find food and avoid dangerous predators.',
     },
 }

@@ -74,7 +74,7 @@ async function testArduinoConnection() {
                         'Kritosaurus',
                         'Tyrannosaurus',
                         'Mosasaurus',
-                        'Protohadros',
+                        'Protostega',
                         'Start/Select Screen',
                     ]
 

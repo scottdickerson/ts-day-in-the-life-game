@@ -75,7 +75,7 @@ const DINOSAUR_CONFIGS: DinosaurConfig[] = [
         exportedField: 'exportedForReview',
     },
     {
-        name: 'Protohadros',
+        name: 'Protostega',
         jsonFile: 'Protes.json',
         sceneFolder: 'ProtosScenes',
         exportedField: 'exportedForReview',

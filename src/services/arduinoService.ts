@@ -173,7 +173,7 @@ export class ArduinoService extends EventEmitter {
                     'Kritosaurus',
                     'Tyrannosaurus',
                     'Mosasaurus',
-                    'Protohadros',
+                    'Protostega',
                     'Start/Select Screen',
                 ]
 
