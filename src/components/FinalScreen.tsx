@@ -1,4 +1,5 @@
 import React from 'react'
+import parse from 'html-react-parser'
 import {
     determineDinoFinalState,
     determineDinoImage,
@@ -67,7 +68,7 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
             {/* Message */}
             <div className="absolute left-1/2 top-[950px] -translate-x-1/2 -translate-y-1/2 w-[1350px] flex flex-col justify-center text-center">
                 <p className="text-[44px] md:text-[55px] leading-[1.25] font-medium drop-shadow-[0_4px_10px_rgba(0,0,0,0.45)]">
-                    {message}
+                    {parse(message)}
                 </p>
             </div>
             <div className="absolute bottom-[86px] right-[144px]">

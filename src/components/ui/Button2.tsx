@@ -19,6 +19,6 @@ export const Button2: React.FC<Button2Props> = ({ children, onClick }) => (
             src="Button Assets/Button2.webp"
             alt=""
         />
-        {children}
+        <span>{children}</span>
     </button>
 )

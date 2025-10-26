@@ -60,15 +60,20 @@ const DINOSAUR_CONFIGS = [
  */
 function shouldHaveSceneImage(storyEntry, exportedField) {
     const codeId = storyEntry['Code ID']
-    const exportedValue = storyEntry[exportedField]
 
-    // Skip entries without code IDs, empty code IDs, or conclusion entries (with 6 suffix)
-    if (!codeId || codeId === '' || codeId.endsWith('_6')) {
+    // Skip entries without code IDs, empty code IDs, conclusion entries (with 6 suffix), "0" entries, or entries ending with simple digits
+    if (
+        !codeId ||
+        codeId === '' ||
+        codeId.endsWith('_6') ||
+        codeId === '0' ||
+        /_\d+$/.test(codeId)
+    ) {
         return false
     }
 
-    // Check if marked as exported/ready for review
-    return exportedValue === 'TRUE' || exportedValue === true
+    // Check for scene images regardless of export status
+    return true
 }
 
 /**

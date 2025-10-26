@@ -1,7 +1,7 @@
 [
     {
         "Code ID": "0",
-        "Content": "You are a mature Protostega, measuring 8 feet long from nose to tail.",
+        "Content": "You are a mature <i>Protostega</i>, measuring 8 feet long from nose to tail.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -15,7 +15,7 @@
     },
     {
         "Code ID": "1",
-        "Content": "You swim towards a familiar spot where you can find seaweed. You notice a young Squalicorax swimming your way. Should you continue to the seaweed or flee?",
+        "Content": "You swim towards a familiar spot where you can find seaweed. You notice a young <i>Squalicorax</i> swimming your way. Should you continue to the seaweed or flee?",
         "exportedForReview": "TRUE",
         "choice 1": "Go to seaweed",
         "choice 2": "Swim away",
@@ -29,7 +29,7 @@
     },
     {
         "Code ID": "1a",
-        "Content": "The young Squalicorax is not a threat to you, though a mature shark could be. You are able to munch on some seaweed. While you are browsing you spot some sea urchins. Should you try to eat them?",
+        "Content": "The young <i>Squalicorax</i> is not a threat to you, though a mature shark could be. You are able to munch on some seaweed. While you are browsing you spot some sea urchins. Should you try to eat them?",
         "exportedForReview": "TRUE",
         "choice 1": "Eat the urchins",
         "choice 2": "Move on",
@@ -43,7 +43,7 @@
     },
     {
         "Code ID": "1a_2a",
-        "Content": "You eat the sea urchins and they make for a tasty snack. While you are chomping, a smaller Protostega approaches you. Would you like to flirt or ignore?",
+        "Content": "You eat the sea urchins and they make for a tasty snack. While you are chomping, a smaller <i>Protostega</i> approaches you. Would you like to flirt or ignore?",
         "exportedForReview": "TRUE",
         "choice 1": "Flirt",
         "choice 2": "Ignore",
@@ -57,7 +57,7 @@
     },
     {
         "Code ID": "1a_2a_3a",
-        "Content": "You are able to mate with this Protostega. In a few weeks you will have to find a safe place on shore to lay your eggs. In the meantime, you see a Mosasaurus swimming above you. Should you swim away or stay put?",
+        "Content": "You are able to mate with this <i>Protostega</i>. In a few weeks you will have to find a safe place on shore to lay your eggs. In the meantime, you see a <i>Mosasaurus</i> swimming above you. Should you swim away or stay put?",
         "exportedForReview": "TRUE",
         "choice 1": "Swim away",
         "choice 2": "Stay put",
@@ -71,7 +71,7 @@
     },
     {
         "Code ID": "1a_2a_3b",
-        "Content": "You ignore the smaller Protostega and they swim away. Now you are hungry, where should you look for food?",
+        "Content": "You ignore the smaller <i>Protostega</i> and they swim away. Now you are hungry, where should you look for food?",
         "exportedForReview": "TRUE",
         "choice 1": "Rudist bivalve reef",
         "choice 2": "Check deeper waters",
@@ -85,7 +85,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a",
-        "Content": "Your dark-colored shell hides you in deeper waters so once you begin swimming towards the surface the Mosasaurus spots you and attacks.",
+        "Content": "Your dark-colored shell hides you in deeper waters so once you begin swimming towards the surface the <i>Mosasaurus</i> spots you and attacks.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -99,7 +99,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5",
-        "Content": "You become Mosasaurus food.",
+        "Content": "You become <i>Mosasaurus</i> food.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -113,7 +113,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b",
-        "Content": "Your dark-colored shell hides you in deeper waters so the Mosasaurus doesn’t spot you. Soon, you are hungry again. You see a crustacean and a jellyfish nearby. Which one should you hunt?",
+        "Content": "Your dark-colored shell hides you in deeper waters so the <i>Mosasaurus</i> doesn’t spot you. Soon, you are hungry again. You see a crustacean and a jellyfish nearby. Which one should you hunt?",
         "exportedForReview": "TRUE",
         "choice 1": "Jellyfish",
         "choice 2": "Crustacean",
@@ -183,7 +183,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a",
-        "Content": "You find some tasty crustaceans in the reef. You notice another, bigger Protostega approaching the reef. Should you flirt with it or scare it away so you don't have to share?",
+        "Content": "You find some tasty crustaceans in the reef. You notice another, bigger <i>Protostega</i> approaching the reef. Should you flirt with it or scare it away so you don't have to share?",
         "exportedForReview": "TRUE",
         "choice 1": "Flirt",
         "choice 2": "Scare it",
@@ -197,7 +197,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a_5a",
-        "Content": "This Protostega is more attractive than the last, and takes a liking to you. You’ve found yourself a suitable mate! ",
+        "Content": "This <i>Protostega</i> is more attractive than the last, and takes a liking to you. You’ve found yourself a suitable mate! ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -211,7 +211,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a_5a_6",
-        "Content": "Soon you will have to go ashore to lay eggs. You remember the direction to the same beach where you were born. ",
+        "Content": "Soon you will have to go ashore to lay eggs. You remember the direction of the beach where you were born.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -225,7 +225,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a_5b",
-        "Content": "You chase the other Protostega off and you have the reef to yourself...for now.",
+        "Content": "You chase the other <i>Protostega</i> off and you have the reef to yourself...for now.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -253,7 +253,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4b",
-        "Content": "You swam right into a Mosasaurus who was waiting to ambush prey! They were hiding in deeper waters and when they saw you approaching, they attacked you.",
+        "Content": "You swam right into a <i>Mosasaurus</i> who was waiting to ambush prey! They were hiding in deeper waters and when they saw you approaching, they attacked you.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -281,7 +281,7 @@
     },
     {
         "Code ID": "1a_2b",
-        "Content": "You pass up the sea urchins and continue swimming. In the distance you see a group of Squalicorax feeding on a floating carcass. Should you join in on the feeding frenzy?",
+        "Content": "You pass up the sea urchins and continue swimming. In the distance you see a group of <i>Squalicorax</i> feeding on a floating carcass. Should you join in on the feeding frenzy?",
         "exportedForReview": "TRUE",
         "choice 1": "Join in",
         "choice 2": "No thanks",
@@ -337,7 +337,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a",
-        "Content": "You swim near the surface and snack on a couple of jellyfish. A pod of Dolichorhynchops swims by while you are eating. Do you ignore them or swim away?",
+        "Content": "You swim near the surface and snack on a couple of jellyfish. A pod of <i>Dolichorhynchops</i> swims by while you are eating. Do you ignore them or swim away?",
         "exportedForReview": "TRUE",
         "choice 1": "Ignore",
         "choice 2": "Swim away",
@@ -351,7 +351,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b",
-        "Content": "You swim closer to shore and come across a hadrosaur carcass floating in the water. A group of Ichthyornis are feeding on it. Should you try to eat some of the carcass?",
+        "Content": "You swim closer to shore and come across a hadrosaur carcass floating in the water. A group of <i>Ichthyornis</i> are feeding on it. Should you try to eat some of the carcass?",
         "exportedForReview": "TRUE",
         "choice 1": "Eat some",
         "choice 2": "No thank you",
@@ -365,7 +365,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a_5a",
-        "Content": "You ignore the Dolichorhynchops but they continue to linger near you. Maybe being near a large animal like yourself is safer for them.",
+        "Content": "You ignore the <i>Dolichorhynchops</i> but they continue to linger near you. Maybe being near a large animal like yourself is safer for them.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -393,7 +393,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a_5b",
-        "Content": "The Dolichorhynchops do not follow you. As you continue to swim, you find another Protostega feeding on seaweed and decide to join them.",
+        "Content": "The <i>Dolichorhynchops</i> do not follow you. As you continue to swim, you find another <i>Protostega</i> feeding on seaweed and decide to join them.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -421,7 +421,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b_5a",
-        "Content": "Good thinking, you don’t have to expend energy hunting this food and you’re able to eat until a Mosasaurus starts to approach! ",
+        "Content": "Good thinking, you don’t have to expend energy hunting this food and you’re able to eat until a <i>Mosasaurus</i> starts to approach! ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -435,7 +435,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b_5a_6",
-        "Content": "The Mosasaurus chases you off and takes over the carcass.",
+        "Content": "The <i>Mosasaurus</i> chases you off and takes over the carcass.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -477,7 +477,7 @@
     },
     {
         "Code ID": "1b",
-        "Content": "The young Squalicorax wasn’t interested in you, so you missed out on a seaweed lunch for no reason! Where should you look for food now, the rudist bivalve reef or open ocean?",
+        "Content": "The young <i>Squalicorax</i> wasn’t interested in you, so you missed out on a seaweed lunch for no reason! Where should you look for food now, the rudist bivalve reef or open ocean?",
         "exportedForReview": "TRUE",
         "choice 1": "Rudist bivalve reef",
         "choice 2": "Open ocean",
@@ -533,7 +533,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a",
-        "Content": "You swim near the surface and come across a floating Xiphactinus carcass. An Enchodus is already feeding on it. Should you join in?",
+        "Content": "You swim near the surface and come across a floating <i>Xiphactinus</i> carcass. An <i>Enchodus</i> is already feeding on it. Should you join in?",
         "exportedForReview": "TRUE",
         "choice 1": "Sounds like an easy meal",
         "choice 2": "No thank you",
@@ -547,7 +547,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a_5a",
-        "Content": "The Enchodus does not seem to mind sharing. You both get plenty to eat.",
+        "Content": "The <i>Enchodus</i> does not seem to mind sharing. You both get plenty to eat.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -575,7 +575,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a_5b",
-        "Content": "You decide to look for food in a nearby seaweed bed instead. When you arrive, you see an Anomoedus picking urchins from the seaweed. Those look appetizing.",
+        "Content": "You decide to look for food in a nearby seaweed bed instead. When you arrive, you see an <i>Anomoedus</i> picking urchins from the seaweed. Those look appetizing.",
         "exportedForReview": "FALSE",
         "choice 1": "",
         "choice 2": "",
@@ -603,7 +603,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b",
-        "Content": "You discover that this bed is rich with sea urchins that are eating the seaweed too! While you're eating a young Plioplatecarpus sneaks up on you. Hide in the seaweed or flee?",
+        "Content": "You discover that this bed is rich with sea urchins that are eating the seaweed too! While you're eating a young <i>Plioplatecarpus</i> sneaks up on you. Hide in the seaweed or flee?",
         "exportedForReview": "TRUE",
         "choice 1": "Flee",
         "choice 2": "Hide",
@@ -617,7 +617,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a",
-        "Content": "You stay at the surface but are soon bumped by a Plioplatecarpus hunting the birds. You are startled and hungry again. Go after the brightly colored ammonite swimming by or find clams near shore?",
+        "Content": "You stay at the surface but are soon bumped by a <i>Plioplatecarpus</i> hunting the birds. You are startled and hungry again. Go after the brightly colored ammonite swimming by or find clams near shore?",
         "exportedForReview": "TRUE",
         "choice 1": "Ammonite",
         "choice 2": "Clams",
@@ -631,7 +631,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b",
-        "Content": "As you descend you see a Plioplatecarpus approaching the surface. You left right in time. Where should you head next, a nearby seaweed bed, or join another Protostega hunting a swarm of jellyfish?",
+        "Content": "As you descend you see a <i>Plioplatecarpus</i> approaching the surface. You left right in time. Where should you head next, a nearby seaweed bed, or join another <i>Protostega</i> hunting a swarm of jellyfish?",
         "exportedForReview": "TRUE",
         "choice 1": "Seaweed",
         "choice 2": "Join in",
@@ -645,7 +645,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5a",
-        "Content": "You get a head start and you’re able to outswim this young Plioplatecarpus. ",
+        "Content": "You get a head start and you’re able to outswim this young <i>Plioplatecarpus</i>. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -673,7 +673,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5b",
-        "Content": "You nestle into the seaweed and the Plioplatecarpus swims past you. ",
+        "Content": "You nestle into the seaweed and the <i>Plioplatecarpus</i> swims past you. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -757,7 +757,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5a",
-        "Content": "You don’t notice the Plioplatecarpus lying low in the seaweed! It ambushes you, and you do not survive.",
+        "Content": "You don’t notice the <i>Plioplatecarpus</i> lying low in the seaweed! It ambushes you, and you do not survive.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -771,7 +771,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5a_6",
-        "Content": "You make a good meal for the Plioplatecarpus.",
+        "Content": "You make a good meal for the <i>Plioplatecarpus</i>.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -785,7 +785,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5b",
-        "Content": "You and the other Protostega are able to feed on the swarm of jellyfish together!",
+        "Content": "You and the other <i>Protostega</i> are able to feed on the swarm of jellyfish together!",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -813,7 +813,7 @@
     },
     {
         "Code ID": "1b_2b",
-        "Content": "You swim around and come across a Scaphites. You try to eat it but you are unable to crack its hard shell. You see some clams in the distance. Go for the clams or keep looking around the open ocean?",
+        "Content": "You swim around and come across a <i>Scaphites</i>. You try to eat it but you are unable to crack its hard shell. You see some clams in the distance. Go for the clams or keep looking around the open ocean?",
         "exportedForReview": "TRUE",
         "choice 1": "Go for clams",
         "choice 2": "Keep looking",
@@ -827,7 +827,7 @@
     },
     {
         "Code ID": "1b_2b_3a",
-        "Content": "You chow down on some clams. Another Protostega shows up to eat, they are not very big. Should you fight them off?",
+        "Content": "You chow down on some clams. Another <i>Protostega</i> shows up to eat, they are not very big. Should you fight them off?",
         "exportedForReview": "TRUE",
         "choice 1": "Ignore",
         "choice 2": "Fight",
@@ -841,7 +841,7 @@
     },
     {
         "Code ID": "1b_2b_3b",
-        "Content": "You continue looking and you see a group of Protostega feeding in a nearby seaweed bed. Should you join them or keep looking for food on your own?",
+        "Content": "You continue looking and you see a group of <i>Protostega</i> feeding in a nearby seaweed bed. Should you join them or keep looking for food on your own?",
         "exportedForReview": "TRUE",
         "choice 1": "Join them",
         "choice 2": "Keep looking",
@@ -855,7 +855,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a",
-        "Content": "You ignore the Protostega and you both feed in peace. While you are eating, you see multiple Squalicorax swimming above you. Should you try to swim away or continue eating?",
+        "Content": "You ignore the <i>Protostega</i> and you both feed in peace. While you are eating, you see multiple <i>Squalicorax</i> swimming above you. Should you try to swim away or continue eating?",
         "exportedForReview": "TRUE",
         "choice 1": "Continue eating",
         "choice 2": "Swim away",
@@ -869,7 +869,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4b",
-        "Content": "Before you fight, the other Protostega is interested in a nearby swarm of jellyfish. Should you stay near shore and eat some clams or catch some jellyfish for yourself?",
+        "Content": "Before you fight, the other <i>Protostega</i> is interested in a nearby swarm of jellyfish. Should you stay near shore and eat some clams or catch some jellyfish for yourself?",
         "exportedForReview": "TRUE",
         "choice 1": "Stay near shore",
         "choice 2": "Catch jellyfish",
@@ -883,7 +883,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a",
-        "Content": "As you approach, two Protostega in the group begin to fight for your attention. The winner scares the loser away. Do you...",
+        "Content": "As you approach, two <i>Protostega</i> in the group begin to fight for your attention. The winner scares the loser away. Do you...",
         "exportedForReview": "TRUE",
         "choice 1": "Flirt with the winner",
         "choice 2": "Ignore the winner",
@@ -897,7 +897,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b",
-        "Content": "You continue wandering around and spot a Xiphactinus swimming above you. Should you stay calm or swim away as fast as you can?",
+        "Content": "You continue wandering around and spot a <i>Xiphactinus</i> swimming above you. Should you stay calm or swim away as fast as you can?",
         "exportedForReview": "TRUE",
         "choice 1": "Keep swimming",
         "choice 2": "Swim away",
@@ -911,7 +911,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5a",
-        "Content": "This Protostega is attracted to you and you are able to mate! ",
+        "Content": "This <i>Protostega</i> is attracted to you and you are able to mate! ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -925,7 +925,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5a_6",
-        "Content": "In a few weeks you will have to head to shore to find a safe spot to lay your eggs.",
+        "Content": "In a few weeks you will have to head to shore and find a safe spot to lay your eggs.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -939,7 +939,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5b",
-        "Content": "You were not attracted to this Protostega. When you ignore them, they lose interest. ",
+        "Content": "You were not attracted to this <i>Protostega</i>. When you ignore them, they lose interest. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -960,14 +960,14 @@
         "env label": "",
         "Time of Day": "",
         "Shot Img ID": "",
-        "reaction label": "afraid",
+        "reaction label": "neutral",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
     },
     {
         "Code ID": "1b_2b_3b_4b_5a",
-        "Content": "Your dark shell hides you in dark waters below so the Xiphactinus doesn’t notice you swimming slowly.",
+        "Content": "Your dark shell hides you in dark waters below so the <i>Xiphactinus</i> doesn’t notice you swimming slowly.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -995,7 +995,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b_5b",
-        "Content": "Your hurried swimming catches the attention of the Xiphactinus. They chase after you and you can’t outswim them. ",
+        "Content": "Your hurried swimming catches the attention of the <i>Xiphactinus</i>. They chase after you and you can’t outswim them. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -1022,7 +1022,7 @@
         "NPC_B": ""
     },
     {
-        "Code ID": "1b_2b_3a_4a_5a",
+        "Code ID": "You nestle into the seaweed and the sharks move past you.",
         "Content": "You nestle into the seaweed and the sharks moves past you. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
@@ -1030,7 +1030,7 @@
         "env label": "seaweed bed",
         "Time of Day": "night",
         "Shot Img ID": "",
-        "reaction label": "afraid",
+        "reaction label": "happy",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
@@ -1044,14 +1044,14 @@
         "env label": "",
         "Time of Day": "",
         "Shot Img ID": "",
-        "reaction label": "afraid",
+        "reaction label": "neutral",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
     },
     {
         "Code ID": "1b_2b_3a_4a_5b",
-        "Content": "Your movement catches the attention of the Squalicorax!",
+        "Content": "Your movement catches the attention of the <i>Squalicorax</i>!",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -1093,21 +1093,21 @@
     },
     {
         "Code ID": "1b_2b_3a_4b_5a_6",
-        "Content": "The other Protostega swims away and you end your day content.",
+        "Content": "The other <i>Protostega</i> swims away and you end your day content.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
         "Time of Day": "",
         "Shot Img ID": "",
-        "reaction label": "neutral",
+        "reaction label": "happy",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
     },
     {
         "Code ID": "1b_2b_3a_4b_5b",
-        "Content": "You snatch a few jellyfish, and the other Protostega doesn't fight you off.",
+        "Content": "You snatch a few jellyfish, and the other <i>Protostega</i> doesn't fight you off.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",

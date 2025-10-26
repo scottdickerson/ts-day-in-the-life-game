@@ -1,7 +1,7 @@
 [
     {
         "Code ID": "0",
-        "Content": "You are a young Kritosaurus living in a herd. Even though you are not as big as some of the older adults in the herd, this is your first year looking for a mate.",
+        "Content": "You are a young <i>Kritosaurus</i> living in a herd. Even though you are not as big as some of the older adults in the herd, this is your first year looking for a mate.",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
@@ -29,7 +29,7 @@
     },
     {
         "Code ID": "1a",
-        "Content": "You approach the water’s edge and the herd follows you—but something is stirring in the water. Do you feed on those horsetails, or warn the group to move downstream?",
+        "Content": "You approach the water’s edge and the herd follows you—but something is stirring in the water. Do you continue eating the horsetails, or warn the group to move downstream?",
         "choice 1": "Continue feeding",
         "choice 2": "Move downstream",
         "env label": "water",
@@ -43,7 +43,7 @@
     },
     {
         "Code ID": "1a_2a",
-        "Content": "A Deinosuchus snapped at you while you tried to eat the horsetails. You avoid injury but learn to be careful around the water. The herd is still hungry, so should the group move downstream or try the forest instead?",
+        "Content": "A <i>Deinosuchus</i> snapped at you while you tried to eat the horsetails. You avoid injury but learn to be careful around the water. The herd is still hungry, so should the group move downstream or try the forest instead?",
         "choice 1": "Move downstream",
         "choice 2": "Head to forest",
         "env label": "water",
@@ -57,7 +57,7 @@
     },
     {
         "Code ID": "1a_2a_3a",
-        "Content": "The herd moves downstream and another herd of Kritosaurus are already eating horsetails and drinking from the water. Should you join them or respect their territory?",
+        "Content": "The herd moves downstream and another herd of <i>Kritosaurus</i> are already eating horsetails and drinking from the water. Should you join them or respect their territory?",
         "choice 1": "Join them",
         "choice 2": "Keep your distance",
         "env label": "water",
@@ -71,7 +71,7 @@
     },
     {
         "Code ID": "1a_2a_3b",
-        "Content": "The herd heads into the forest and you find a patch of ferns. You eat a fern an older Kritosaurus was eyeing. They attack you. Do you fight back or retreat?",
+        "Content": "The herd heads into the forest and you find a patch of ferns. You eat a fern an older <i>Kritosaurus</i> was eyeing. They attack you. Do you fight back or retreat?",
         "choice 1": "Fight back",
         "choice 2": "Retreat",
         "env label": "forest",
@@ -85,7 +85,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a",
-        "Content": "The Kritosaurus herd is protective of their territory. They chase off your herd. Everyone is lying down to rest but you’re so hungry. Do you forage on your own or rest with the herd?",
+        "Content": "The <i>Kritosaurus</i> herd is protective of their territory. They chase off your herd. Everyone is lying down to rest but you’re so hungry. Do you forage on your own or rest with the herd?",
         "choice 1": "Forage",
         "choice 2": "Stick with the herd",
         "env label": "clearing",
@@ -99,7 +99,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b",
-        "Content": "Safe choice! Though these are Kritosaurus, they can still be territorial. The herd moves to the forest to feed on ferns instead. A small member of the other herd has followed you and starts to flirt.",
+        "Content": "Safe choice! Though these are <i>Kritosaurus</i>, they can still be territorial. The herd moves to the forest to feed on ferns instead. A small member of the other herd has followed you and starts to flirt.",
         "choice 1": "Flirt back",
         "choice 2": "They look weak",
         "env label": "forest",
@@ -113,7 +113,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a",
-        "Content": "This Kritosaurus chases you away from the ferns and the herd. You find another patch of plants to eat. While you eat, an enantiornithine bird lands on you. Should you scare it off?",
+        "Content": "This <i>Kritosaurus</i> chases you away from the ferns and the herd. You find another patch of plants to eat. While you eat, an enantiornithine bird lands on you. Should you scare it off?",
         "choice 1": "Scare it off",
         "choice 2": "Leave it alone",
         "env label": "forest",
@@ -127,7 +127,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4b",
-        "Content": "Good choice, you are probably weaker than the older Kritosaurus. Some members of your herd have laid eggs. Ever since the eggs were laid, an oviraptorid has been watching the herd. Should you chase it off?",
+        "Content": "Good choice, you are probably weaker than the older <i>Kritosaurus</i>. Some members of your herd have laid eggs. Ever since the eggs were laid, an oviraptorid has been watching the herd. Should you chase it off?",
         "choice 1": "Chase it off",
         "choice 2": "Leave it be",
         "env label": "nesting grounds",
@@ -141,7 +141,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5a",
-        "Content": "Oh no! A Tyrannosaurus was stalking the herd and sees you leaving. Without the protection of numbers, you are vulnerable. ",
+        "Content": "Oh no! A <i>Tyrannosaurus</i> was stalking the herd and sees you leaving. Without the protection of numbers, you are vulnerable. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "trail",
@@ -155,7 +155,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5a_6",
-        "Content": "The Tyrannosaurus makes a quick meal of you.",
+        "Content": "The <i>Tyrannosaurus</i> makes a quick meal of you.",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
@@ -169,7 +169,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5b",
-        "Content": "While you are resting, one of the older Kritosaurus spots a Tyrannosaurus stalking the group and warns everyone. ",
+        "Content": "While you are resting, one of the older <i>Kritosaurus</i> spots a <i>Tyrannosaurus</i> stalking the group and warns everyone. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "clearing",
@@ -183,7 +183,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5b_6",
-        "Content": "The herd is able to run before the Tyrannosaurus makes a move.",
+        "Content": "The herd is able to run before the <i>Tyrannosaurus</i> makes a move.",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
@@ -379,7 +379,7 @@
     },
     {
         "Code ID": "1a_2b_3a",
-        "Content": "Good thinking, the nodosaurs do not feel threatened by the group and barely stir as everyone drinks. You see a larger group of Kritosaurus in the distance. Should you stick with your herd or try to join the larger herd? ",
+        "Content": "Good thinking, the nodosaurs do not feel threatened by the group and barely stir as everyone drinks. You see a larger group of <i>Kritosaurus</i> in the distance. Should you stick with your herd or try to join the larger herd? ",
         "choice 1": "Join larger herd",
         "choice 2": "Stick with your herd",
         "env label": "water",
@@ -393,7 +393,7 @@
     },
     {
         "Code ID": "1a_2b_3b",
-        "Content": "A nodosaur wacks you with its powerful tail, and you walk away injured. Another Kritosaurus thought your attempt was brave. Do you try to flirt with this potential mate or ignore?",
+        "Content": "A nodosaur wacks you with its powerful tail, and you walk away injured. Another <i>Kritosaurus</i> thought your attempt was brave. Do you try to flirt with this potential mate or ignore?",
         "choice 1": "Flirt",
         "choice 2": "Ignore",
         "env label": "water",
@@ -407,7 +407,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4a",
-        "Content": "You are welcomed into the herd and feel safer with a bigger group. Soon you find a mate and need a place to build a nest. Some Kritosaurus want the nesting ground by the water, others in a clearing...",
+        "Content": "You are welcomed into the herd and feel safer with a bigger group. Soon you find a mate and need a place to build a nest. Some <i>Kritosaurus</i> want the nesting ground by the water, others in a clearing...",
         "choice 1": "Clearing",
         "choice 2": "Near water",
         "env label": "water",
@@ -435,7 +435,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a",
-        "Content": "This Kritosaurus wants to mate with you! Now you need to build a nest. There are a few other Kritosaurus in your herd who also need to nest, so the herd will have to find a nesting ground...",
+        "Content": "This <i>Kritosaurus</i> wants to mate with you! Now you need to build a nest. There are a few other <i>Kritosaurus</i> in your herd who also need to nest, so the herd will have to find a nesting ground...",
         "choice 1": "By the water",
         "choice 2": "In a clearing",
         "env label": "trail",
@@ -547,7 +547,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4b_5b",
-        "Content": "You run back to where you came from and encounter the other herd of Kritosaurus again. ",
+        "Content": "You run back to where you came from and encounter the other herd of <i>Kritosaurus</i> again. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -688,8 +688,8 @@
     {
         "Code ID": "1b",
         "Content": "You move towards the ferns and once the herd sees you feeding, they join you. Now everyone is thirsty! Whose territory do you go through to reach the water?",
-        "choice 1": "Texacephale",
-        "choice 2": "Agujaceratops",
+        "choice 1": "<i>Stegoceras</i>",
+        "choice 2": "<i>Agujaceratops</i>",
         "env label": "forest",
         "Time of Day": "day",
         "exported": "TRUE",
@@ -701,7 +701,7 @@
     },
     {
         "Code ID": "1b_2a",
-        "Content": "The Texacephale were unfriendly and head-butt a few members of the herd. No one is badly hurt. When you reach the river, Agujaceratops are lounging near the water. Approach or find water elsewhere?",
+        "Content": "The <i>Stegoceras</i> were unfriendly and head-butt a few members of the herd. No one is badly hurt. When you reach the river, <i>Agujaceratops</i> are lounging near the water. Approach or find water elsewhere?",
         "choice 1": "Approach",
         "choice 2": "Find water elsewhere",
         "env label": "water",
@@ -715,7 +715,7 @@
     },
     {
         "Code ID": "1b_2a_3a",
-        "Content": "The herd is able to grab a drink without disturbing the Agujaceratops. As you are walking a Tyrannosaurus comes charging at the herd! Do you run away from the tyrannosaur with the herd or separate and hide?",
+        "Content": "The herd is able to grab a drink without disturbing the <i>Agujaceratops</i>. As you are walking a <i>Tyrannosaurus</i> comes charging at the herd! Do you run away from the tyrannosaur with the herd or separate and hide?",
         "choice 1": "Stick with the herd",
         "choice 2": "Seperate and hide",
         "env label": "trail",
@@ -729,9 +729,9 @@
     },
     {
         "Code ID": "1b_2a_3b",
-        "Content": "The Agujaceratops seemed uninterested but it wasn’t worth the risk of being charged! The herd is still thirsty and there is a river nearby. Whose territory should you pass through to get to the river?",
-        "choice 1": "Ornithomimids",
-        "choice 2": "Yehuecaceratops",
+        "Content": "The <i>Agujaceratops</i> seemed uninterested but it wasn’t worth the risk of being charged! The herd is still thirsty and there is a river nearby. Whose territory should you pass through to get to the river?",
+        "choice 1": "<i>Ornithomimids</i>",
+        "choice 2": "<i>Yehuecaceratops</i>",
         "env label": "trail",
         "Time of Day": "evening",
         "exported": "TRUE",
@@ -743,7 +743,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a",
-        "Content": "The herd sticks together, so the tyrannosaur cannot find an opening and leaves. Before falling asleep, you see young Saurornitholestes passing in and out of the trees. Do you scare them off or leave them be?",
+        "Content": "The herd sticks together, so the tyrannosaur cannot find an opening and leaves. Before falling asleep, you see a young <i>Saurornitholestes</i> passing in and out of the trees. Do you scare them off or leave them be?",
         "choice 1": "Scare them",
         "choice 2": "Leave them",
         "env label": "trail",
@@ -757,7 +757,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b",
-        "Content": "You are a vulnerable target without your herd so the Tyrannosaurus runs after you.",
+        "Content": "You are a vulnerable target without your herd so the <i>Tyrannosaurus</i> runs after you.",
         "choice 1": "",
         "choice 2": "",
         "env label": "trail",
@@ -785,7 +785,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a",
-        "Content": "The ornithomimids feel territorial and don’t like the herd romping through their area. They begin to kick a few of the Kritosaurus. Should you retaliate or move on to the river?",
+        "Content": "The ornithomimids feel territorial and don’t like the herd romping through their area. They begin to kick a few of the <i>Kritosaurus</i>. Should you retaliate or move on to the river?",
         "choice 1": "Retaliate",
         "choice 2": "Go to the river",
         "env label": "trail",
@@ -799,7 +799,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b",
-        "Content": "The Yehuecauhceratops are eating some very tasty-looking ferns. Do you join them in eating the ferns or keep moving to the river with the herd?",
+        "Content": "The <i>Yehuecauhceratops</i> are eating some very tasty-looking ferns. Do you join them in eating the ferns or keep moving to the river with the herd?",
         "choice 1": "Keep moving",
         "choice 2": "Join them",
         "env label": "clearing",
@@ -841,7 +841,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a_5b",
-        "Content": "They seem to be passing by. However, after you fall asleep a Saurornitholestes sneaks up and grabs one of the herd's young. ",
+        "Content": "They seem to be passing by. However, after you fall asleep a <i>Saurornitholestes</i> sneaks up and grabs one of the herd’s young. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -953,7 +953,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5b",
-        "Content": "Bad choice, the Yehuecaceratops didn’t want to share and they charge you. You are faster and escape with a minor injury. Because you are hurt, you work hard to catch up with your herd. ",
+        "Content": "Bad choice, the <i>Yehuecauhceratops</i> do not want to share and they charge you. You are faster and escape with a minor injury. Because you are hurt, you work hard to catch up with your herd. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "clearing",
@@ -981,7 +981,7 @@
     },
     {
         "Code ID": "1b_2b",
-        "Content": "The herd passes by an Agujaceratops keeping an eye on you but not approaching. You and the herd make it to the river and drink. After, the herd lies down to rest. You have energy—do you wander around or stay put?",
+        "Content": "The herd passes by an <i>Agujaceratops</i> keeping an eye on you but not approaching. You and the herd make it to the river and drink. After, the herd lies down to rest. You have energy—do you wander around or stay put?",
         "choice 1": "Wander around",
         "choice 2": "Stay put",
         "env label": "water",
@@ -995,7 +995,7 @@
     },
     {
         "Code ID": "1b_2b_3a",
-        "Content": "You wander around and see a young Tyrannosaurus running in your direction. Do you go back and warn the herd or find a spot to hide while it runs past?",
+        "Content": "You wander around and see a young <i>Tyrannosaurus</i> running in your direction. Do you go back and warn the herd or find a spot to hide while it runs past?",
         "choice 1": "Warn the herd",
         "choice 2": "Find a spot to hide",
         "env label": "forest",
@@ -1009,7 +1009,7 @@
     },
     {
         "Code ID": "1b_2b_3b",
-        "Content": "Good work, wandering by yourself can make you more attractive to predators. After resting, the herd is hungry and begins to browse on some ferns when some ornithomimids run into the herd...",
+        "Content": "Good work, wandering by yourself can make you more attractive to predators. After resting, the herd is hungry and begins to browse on some ferns. Suddenly, some ornithomimids run into the herd…",
         "choice 1": "Keep eating",
         "choice 2": "Run away",
         "env label": "trail",
@@ -1023,7 +1023,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a",
-        "Content": "You alert the herd of the approaching Tyrannosaurus and the herd scares them off. As you are drifting off to sleep, you see another Kritosaurus approaching the herd. Should you welcome them or scare them off?",
+        "Content": "You alert the herd of the approaching <i>Tyrannosaurus</i> and the herd scares them off. As you are drifting off to sleep, you see another <i>Kritosaurus</i> approaching the herd. Should you welcome them or scare them off?",
         "choice 1": "Welcome",
         "choice 2": "Scare",
         "env label": "forest",
@@ -1037,7 +1037,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4b",
-        "Content": "You find a spot to hide and lose the young Tyrannosaurus. By the time you leave your hiding spot, it is evening. Should you get some rest near a herd of Aquilarhinus or try to find your herd?",
+        "Content": "You find a spot to hide and lose the young <i>Tyrannosaurus</i>. By the time you leave your hiding spot, it is evening. Should you get some rest near a herd of <i>Aquilarhinus</i> or try to find your herd?",
         "choice 1": "Sleep near them",
         "choice 2": "Find your herd",
         "env label": "forest",
@@ -1079,7 +1079,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b",
-        "Content": "The ornithomimids were running from a tyrannosaur. The tyrannosaur snatches a slow moving Kritosaurus. The rest of the herd escapes. After that encounter, the herd needs to find a safe place to rest. Where to?",
+        "Content": "The ornithomimids were running from a tyrannosaur. The tyrannosaur snatches a slow moving <i>Kritosaurus</i>. The rest of the herd escapes. After that encounter, the herd needs to find a safe place to rest. Where to?",
         "choice 1": "Near the river",
         "choice 2": "Fern-filled forest",
         "env label": "trail",
@@ -1093,7 +1093,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a_5a",
-        "Content": "This Kritosaurus is ill and was left by its herd. Because you do not know this, you welcome this Kritosaurus into your herd. ",
+        "Content": "This <i>Kritosaurus</i> is ill and was left by its herd. Because you do not know this, you welcome this <i>Kritosaurus</i> into your herd. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -1101,7 +1101,7 @@
         "exported": "TRUE",
         "NPC_A": "adult krito (sick)",
         "Shot Img ID": "",
-        "reaction label": "happy",
+        "reaction label": "neutral",
         "reaction img": "",
         "NPC_B": ""
     },
@@ -1121,7 +1121,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a_5b",
-        "Content": "The Kritosaurus may have been ill or injured. Welcoming it into the herd could make the herd vulnerable.",
+        "Content": "The <i>Kritosaurus</i> may have been ill or injured. Welcoming it into the herd could make the herd vulnerable.",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -1191,7 +1191,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4b_5b_6",
-        "Content": "You are awakened by the calls of other dinosaurs and the sounds of Cimolodon scurrying around.",
+        "Content": "You are awakened by the calls of other dinosaurs and the sound of a <i>Cimolodon</i> scurrying around.",
         "choice 1": "",
         "choice 2": "",
         "env label": "",

@@ -150,7 +150,9 @@ export const GameUI: React.FC<GameUIProps> = ({
     }
 
     if (isLoading) {
-        return <div className="p-8 text-center">Loading game data...</div>
+        return (
+            <div className="relative w-full min-h-[1080px] overflow-hidden"></div>
+        )
     }
 
     if (!currentNode) {
@@ -169,7 +171,7 @@ export const GameUI: React.FC<GameUIProps> = ({
 
     // Figma-inspired layout
     return (
-        <div className="relative w-full min-h-[1080px] overflow-hidden bg-white">
+        <div className="relative w-full min-h-[1080px] overflow-hidden  fade-in-80 animate-fade">
             {/* Scene background */}
             <DinosaurSceneBackground
                 dinosaurType={dinosaurType}
@@ -188,6 +190,7 @@ export const GameUI: React.FC<GameUIProps> = ({
             {/* Dinosaur reaction image */}
             <DinosaurOnChoiceScreen
                 dinosaurType={dinosaurType}
+                key={currentNode['Code ID']}
                 reactionLabel={
                     (currentNode['reaction label'] as DinosaurReaction) ??
                     DinosaurReaction.NEUTRAL

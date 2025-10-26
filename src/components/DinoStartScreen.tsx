@@ -1,5 +1,6 @@
 import React from 'react'
 import type { DinoOverview } from '@/data/siteData'
+import parse from 'html-react-parser'
 import { DinoGrid } from './DinoGrid'
 import { Button1 } from './ui/Button1'
 import { Button2 } from './ui/Button2'
@@ -106,7 +107,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
                         !
                     </h2>
                     <p className="text-[33px] leading-[45px] text-[#2a5433]">
-                        {description}
+                        {parse(description)}
                     </p>
                 </div>
                 {/* CTA Buttons and progress glyphs */}

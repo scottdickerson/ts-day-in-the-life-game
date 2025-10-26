@@ -1,7 +1,7 @@
 [
     {
         "Code ID": "0",
-        "Content": "You are a parent Tyrannosaurus. Your nest is in a secluded spot within walking distance of the river. Your eggs will hatch soon, so you need to find food for yourself and your offspring",
+        "Content": "You are a parent <i>Tyrannosaurus</i>. Your nest is in a secluded spot within walking distance of the river. Your eggs will hatch soon, so you need to find food for yourself and your offspring",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
@@ -29,7 +29,7 @@
     },
     {
         "Code ID": "1a",
-        "Content": "As you charge the ornithomimids you notice an Agujaceratops nearby. Do you go for the ornithomimids (left) or the Agujaceratops (right)?",
+        "Content": "As you charge the ornithomimids you notice an <i>Agujaceratops</i> nearby. Do you go for the ornithomimids (left) or the <i>Agujaceratops</i> (right)?",
         "choice 1": "Left",
         "choice 2": "Right",
         "env label": "forest",
@@ -71,7 +71,7 @@
     },
     {
         "Code ID": "1a_2a_3b",
-        "Content": "You return to the nest and regurgitate some meat for your young, but end up hungry yourself. A herd of Kritosaurus approaches the water for a drink. Stalk the kritosaurs or ambush them?",
+        "Content": "You return to the nest and regurgitate some meat for your young, but end up hungry yourself. A herd of <i>Kritosaurus</i> approaches the water for a drink. Stalk the kritosaurs or ambush them?",
         "choice 1": "Stalk them",
         "choice 2": "Ambush them",
         "env label": "water",
@@ -85,8 +85,8 @@
     },
     {
         "Code ID": "1a_2a_3a_4a",
-        "Content": "You follow the scent and spot a Kritosaurus. However, you also hear a distress call from your babies. Should you return to your nest? Or should you catch the Kritosaurus and bring it back to your babies?",
-        "choice 1": "Catch Kritosaurus",
+        "Content": "You follow the scent and spot a <i>Kritosaurus</i>. However, you also hear a distress call from your babies. Should you return to your nest? Or should you catch the <i>Kritosaurus</i> and bring it back to your babies?",
+        "choice 1": "Catch <i>Kritosaurus</i>",
         "choice 2": "Check on the nest",
         "env label": "forest",
         "Time of Day": "evening",
@@ -99,7 +99,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b",
-        "Content": "You see an Aquilarhinus walking past your nest and try to snatch them. You miss and they take off running towards the water. Do you follow them into the water or go back to your nest?",
+        "Content": "You see an <i>Aquilarhinus</i> walking past your nest and try to snatch them. You miss and they take off running towards the water. Do you follow them into the water or go back to your nest?",
         "choice 1": "Go after them",
         "choice 2": "Return to the nest",
         "env label": "water",
@@ -113,7 +113,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a",
-        "Content": "The Kritosaurus take off running and you see another Tyrannosaurus begin to chase them. This Tyrannosaurus must have been stalking them too. Do you join the Tyrannosaurus or stay to protect your young?",
+        "Content": "The <i>Kritosaurus</i> take off running and you see another <i>Tyrannosaurus</i> begin to chase them. This <i>Tyrannosaurus</i> must have been stalking them too. Do you join the <i>Tyrannosaurus</i> or stay to protect your young?",
         "choice 1": "Join them",
         "choice 2": "Stay with the nest",
         "env label": "water",
@@ -127,7 +127,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4b",
-        "Content": "You are able catch a kritosaur. While you are eating it, you see another Tyrannosaurus building their nest a short distance from yours. Do you defend your territory or leave it be?",
+        "Content": "You are able catch a kritosaur. While you are eating it, you see another <i>Tyrannosaurus</i> building their nest a short distance from yours. Do you defend your territory or leave it be?",
         "choice 1": "Defend",
         "choice 2": "Leave it be",
         "env label": "water",
@@ -141,7 +141,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5a",
-        "Content": "Oh no! A saurornitholestes ate one of your young while you were away. ",
+        "Content": "Oh no! A <i>Saurornitholestes</i> ate one of your young while you were away.",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -169,7 +169,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5b",
-        "Content": "Good timing! When you return, you see a Saurornitholestes approaching your nest. ",
+        "Content": "Good timing! When you return, you see a <i>Saurornitholestes</i> approaching your nest.",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -197,7 +197,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b_5a",
-        "Content": "Bad idea! The water is Deinosuchus territory and this crocodylian injures you. ",
+        "Content": "Bad idea! The water is <i>Deinosuchus</i> territory and this crocodylian injures you.",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -225,7 +225,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b_5b",
-        "Content": "The crocodylian Deinosuchus lives in this river and tries to attack the hadrosaur. It fails and the Aquilarhinus runs back onto land where you are able to catch them. ",
+        "Content": "The crocodylian <i>Deinosuchus</i> lives in this river and tries to attack the hadrosaur. It fails and the <i>Aquilarhinus</i> runs back onto land where you are able to catch them. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -309,7 +309,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4b_5a",
-        "Content": "You charge at the other Tyrannosaurus but this dinosaur is stronger and overpowers you. Unfortunately, you do not survive the night. ",
+        "Content": "You charge at the other <i>Tyrannosaurus</i> but this dinosaur is stronger and overpowers you. Unfortunately, you do not survive the night. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -337,7 +337,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4b_5b",
-        "Content": "Smart move! The presence of two Tyrannosaurus might make this area safer for both of your families. ",
+        "Content": "Smart move! The presence of two tyrannosaurs might make this area safer for both families.",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -365,7 +365,7 @@
     },
     {
         "Code ID": "1a_2b",
-        "Content": "The Agujaceratops fights you off and you hear your hatchlings calling. You will need to feed them. You see a smaller Tyrannosaurus feeding nearby, should you try to steal their prey?",
+        "Content": "The <i>Agujaceratops</i> fights you off and you hear your hatchlings calling. You will need to feed them. You see a smaller <i>Tyrannosaurus</i> feeding nearby, should you try to steal their prey?",
         "choice 1": "Steal the prey",
         "choice 2": "Don't risk it",
         "env label": "forest",
@@ -379,7 +379,7 @@
     },
     {
         "Code ID": "1a_2b_3a",
-        "Content": "Because you are stronger, you easily steal the tyrannosaur's prey. You and your young enjoy a meal. Now you lead your young to get some water but you see a herd of Agujaceratops near the riverbank. What should you do?",
+        "Content": "Because you are stronger, you easily steal the tyrannosaur's prey. You and your young enjoy a meal. Now you lead your young to get some water but you see a herd of <i>Agujaceratops</i> near the riverbank. What should you do?",
         "choice 1": "Drink anyway",
         "choice 2": "Move downstream",
         "env label": "water",
@@ -393,7 +393,7 @@
     },
     {
         "Code ID": "1a_2b_3b",
-        "Content": "Safe choice, a fight could lead to an injury even if you are bigger. You see what looks like a deceased Agujaceratops not too far away. Should you go check it out or return to your nest?",
+        "Content": "Safe choice, a fight could lead to an injury even if you are bigger. You see what looks like a deceased <i>Agujaceratops</i> not too far away. Should you go check it out or return to your nest?",
         "choice 1": "Check it out",
         "choice 2": "Return to nest",
         "env label": "trail",
@@ -407,7 +407,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4a",
-        "Content": "The Agujaceratops are not feeling territorial so they don’t go after you. You and your young get a drink undisturbed. You head back to your nest and a Cimolodon is scurrying around. Do you approach or ignore?",
+        "Content": "The <i>Agujaceratops</i> are not feeling territorial so they don’t go after you. You and your young get a drink undisturbed. You head back to your nest and a <i>Cimolodon</i> is scurrying around. Do you approach or ignore?",
         "choice 1": "Approach them",
         "choice 2": "Ignore",
         "env label": "water",
@@ -435,7 +435,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a",
-        "Content": "Nice! You are able to feed on this dead Agujaceratops. This saves you energy since you didn’t have to hunt it. It’s late but you are thirsty, where should you look for a drink?",
+        "Content": "Nice! You are able to feed on this dead <i>Agujaceratops</i>. This saves you energy since you didn’t have to hunt it. It’s late but you are thirsty, where should you look for a drink?",
         "choice 1": "The river",
         "choice 2": "Wait till morning",
         "env label": "trail",
@@ -477,7 +477,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4a_5a_6",
-        "Content": "But look, your nest has been picked free of insects. Thanks Cimolodon!",
+        "Content": "But look, your nest has been picked free of insects. Thanks <i>Cimolodon</i>!",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
@@ -575,7 +575,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a_5a",
-        "Content": "You go to drink from the river but since it is dark, you do not see the Deinosuchus sneak up on you. It lunges at you and bites your snout. ",
+        "Content": "You go to drink from the river but since it is dark, you do not see the <i>Deinosuchus</i> sneak up on you. It lunges at you and bites your snout. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -681,7 +681,7 @@
         "exported": "",
         "NPC_A": "",
         "Shot Img ID": "",
-        "reaction label": "neutral",
+        "reaction label": "afraid",
         "reaction img": "",
         "NPC_B": ""
     },
@@ -701,7 +701,7 @@
     },
     {
         "Code ID": "1b_2a",
-        "Content": "You see a herd of Texacephale grazing. They don't see you. Should you ambush them or keep moving?",
+        "Content": "You see a herd of <i>Stegoceras</i> grazing. They don't see you. Should you ambush them or keep moving?",
         "choice 1": "Ambush",
         "choice 2": "Keep moving",
         "env label": "clearing",
@@ -715,7 +715,7 @@
     },
     {
         "Code ID": "1b_2a_3a",
-        "Content": "You are able to catch a Texacephale and it makes a nutritious meal. You hear your babies calling, they must have hatched. Where should you look for more food so that you can feed your hungry babies?",
+        "Content": "You are able to catch a <i>Stegoceras</i> and it makes a nutritious meal. You hear your babies calling, they must have hatched. Where should you look for more food so that you can feed your hungry babies?",
         "choice 1": "Fern-filled forest",
         "choice 2": "Along the riverbank",
         "env label": "clearing",
@@ -729,8 +729,8 @@
     },
     {
         "Code ID": "1b_2a_3b",
-        "Content": "The Texacephale are small so you choose not to hunt them. You return to your nest and your eggs have hatched. Now you need to feed them. You see an Agujaceratops feeding on cycads. What should you do?",
-        "choice 1": "Go after Agujaceratops",
+        "Content": "The <i>Stegoceras</i> are small so you choose not to hunt them. You return to your nest and your eggs have hatched. Now you need to feed them. You see an <i>Agujaceratops</i> feeding on cycads. What should you do?",
+        "choice 1": "Go after <i>Agujaceratops</i>",
         "choice 2": "Keep searching",
         "env label": "water",
         "Time of Day": "evening",
@@ -757,7 +757,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b",
-        "Content": "You come across a herd of Kritosaurus resting near the water. Do you try to snatch one lying on the outskirts of the herd or keep searching?",
+        "Content": "You come across a herd of <i>Kritosaurus</i> resting near the water. Do you try to snatch one lying on the outskirts of the herd or keep searching?",
         "choice 1": "Snatch the one",
         "choice 2": "Keep searching",
         "env label": "water",
@@ -771,7 +771,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a",
-        "Content": "The Agujaceratops is healthy and puts up a fight. You do not find it worth the energy to continue, so you go back to your nest. On the way, you hear the call of another Tyrannosaurus. Do you approach or ignore?",
+        "Content": "The <i>Agujaceratops</i> is healthy and puts up a fight. You do not find it worth the energy to continue, so you go back to your nest. On the way, you hear the call of another <i>Tyrannosaurus</i>. Do you approach or ignore?",
         "choice 1": "Follow the call",
         "choice 2": "Go to your nest",
         "env label": "forest",
@@ -785,7 +785,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b",
-        "Content": "You keep walking and come across a young Tyrannosaurus eating an Aquilarhinus. Do you steal its prey or wait for the Tyrannosaurus to leave?",
+        "Content": "You keep walking and come across a young <i>Tyrannosaurus</i> eating an <i>Aquilarhinus</i>. Do you steal its prey or wait for the <i>Tyrannosaurus</i> to leave?",
         "choice 1": "Steal the prey",
         "choice 2": "Wait",
         "env label": "trail",
@@ -827,7 +827,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a_5b",
-        "Content": "Lucky you! You come across a dead Aquilarhinus and you’re able to bring food to your offspring without having to hunt.",
+        "Content": "Lucky you! You come across a dead <i>Aquilarhinus</i> and you’re able to bring food to your offspring without having to hunt.",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -855,7 +855,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5a",
-        "Content": "You chase one of the kritosaurs into the water but a Deinosuchus snaps at you. ",
+        "Content": "You chase one of the kritosaurs into the water but a <i>Deinosuchus</i> snaps at you. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -911,7 +911,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a_5a",
-        "Content": "This Tyrannosaurus is calling out to their own babies. When they see you, they are feeling protective and chase you off. ",
+        "Content": "This <i>Tyrannosaurus</i> is calling out to their own babies. When they see you, they are feeling protective and chase you off. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -967,7 +967,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5a",
-        "Content": "You were able to overpower the young Tyrannosaurus and secure a meal for your family.",
+        "Content": "You were able to overpower the young <i>Tyrannosaurus</i> and secure a meal for your family.",
         "choice 1": "",
         "choice 2": "",
         "env label": "trail",
@@ -995,7 +995,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5b",
-        "Content": "By the time the Tyrannosaurus leaves there isn’t much left. You are able to eat the bones left behind but your babies cannot.",
+        "Content": "By the time the <i>Tyrannosaurus</i> leaves there isn’t much left. You are able to eat the bones left behind but your babies cannot.",
         "choice 1": "",
         "choice 2": "",
         "env label": "trail",
@@ -1023,8 +1023,8 @@
     },
     {
         "Code ID": "1b_2b",
-        "Content": "You spot a young Aquilarhinus. Do you make it lunch or return to your nest?",
-        "choice 1": "Eat the Aquilarhinus",
+        "Content": "You spot a young <i>Aquilarhinus</i>. Do you make it lunch or return to your nest?",
+        "choice 1": "Eat the <i>Aquilarhinus</i>",
         "choice 2": "Return to nest",
         "env label": "forest",
         "Time of Day": "day",
@@ -1037,7 +1037,7 @@
     },
     {
         "Code ID": "1b_2b_3a",
-        "Content": "As you approach the Aquilarhinus, you notice it is not alone. It is traveling with a herd. Continue to pursue the young Aquilarhinus?",
+        "Content": "As you approach the <i>Aquilarhinus</i>, you notice it is not alone. It is traveling with a herd. Continue to pursue the young <i>Aquilarhinus</i>?",
         "choice 1": "Continue",
         "choice 2": "Give it up",
         "env label": "forest",
@@ -1051,7 +1051,7 @@
     },
     {
         "Code ID": "1b_2b_3b",
-        "Content": "As you wait, your eggs begin to hatch. Now you need food for yourself and your young. You see a Yehuecauhceratops running towards the water. Do you attack or hold off?",
+        "Content": "As you wait, your eggs begin to hatch. Now you need food for yourself and your young. You see a <i>Yehuecauhceratops</i> running towards the water. Do you attack or hold off?",
         "choice 1": "Attack",
         "choice 2": "Hold off",
         "env label": "water",
@@ -1065,7 +1065,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a",
-        "Content": "These duckbills are strong but you are able to catch a young one. You hear your hatchlings calling out and you rush back to your nest with your kill. When you arrive, an Agujaceratops is sniffing around...",
+        "Content": "These duckbills are strong but you are able to catch a young one. You hear your hatchlings calling out and you rush back to your nest with your kill. When you arrive, an <i>Agujaceratops</i> is sniffing around...",
         "choice 1": "Attack",
         "choice 2": "Leave it be",
         "env label": "water",
@@ -1093,7 +1093,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a",
-        "Content": "You try to go after the Yehuecauhceratops but it was running from another Tyrannosaurus that immediately attacks you for interfering with its prey. Do you try to fight back or abandon your meal?",
+        "Content": "You try to go after the <i>Yehuecauhceratops</i> but it was running from another <i>Tyrannosaurus</i> that immediately attacks you for interfering with its prey. Do you try to fight back or abandon your meal?",
         "choice 1": "Fight back",
         "choice 2": "Abandon",
         "env label": "water",
@@ -1107,7 +1107,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b",
-        "Content": "As you hold off, you see that the Yehuecauhceratops was being chased by a Tyrannosaurus. It takes down the Yehuecauhceratops before it enters the water. Do you try to steal the kill or stay back?",
+        "Content": "As you hold off, you see that the <i>Yehuecauhceratops</i> was being chased by a <i>Tyrannosaurus</i>. It takes down the <i>Yehuecauhceratops</i> before it enters the water. Do you try to steal the kill or stay back?",
         "choice 1": "Try to steal",
         "choice 2": "Stay back",
         "env label": "water",
@@ -1121,7 +1121,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4a_5a",
-        "Content": "You charge at the Agujaceratops for coming too close to your nest. In a rush to escape, the Agujaceratops runs straight through your nest and crushes one of your hatchlings. ",
+        "Content": "You charge at the <i>Agujaceratops</i> for coming too close to your nest. In a rush to escape, the <i>Agujaceratops</i> runs straight through your nest and crushes one of your hatchlings. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -1143,13 +1143,13 @@
         "exported": "",
         "NPC_A": "",
         "Shot Img ID": "",
-        "reaction label": "neutral",
+        "reaction label": "afraid",
         "reaction img": "",
         "NPC_B": ""
     },
     {
         "Code ID": "1b_2b_3a_4a_5b",
-        "Content": "The Agujaceratops sees you approaching with a dead duckbill and runs off. ",
+        "Content": "The <i>Agujaceratops</i> sees you approaching with a dead duckbill and runs off. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -1205,7 +1205,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4b_5b",
-        "Content": "You got lucky! You found a dead Kritosaurus. You’re able to eat and bring home food to the babies without even having to hunt.",
+        "Content": "You got lucky! You found a dead <i>Kritosaurus</i>. You’re able to eat and bring home food to the babies without even having to hunt.",
         "choice 1": "",
         "choice 2": "",
         "env label": "forest",
@@ -1233,7 +1233,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5a",
-        "Content": "You’re able to overpower this Tyrannosaurus and kill it. It is bigger than the Yehuecauhceratops and makes for a filling meal. ",
+        "Content": "You’re able to overpower this <i>Tyrannosaurus</i> and kill it. It is bigger than the <i>Yehuecauhceratops</i> and makes for a filling meal. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -1261,7 +1261,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5b",
-        "Content": "The Tyrannosaurus leaves before finishing the Yehuecauhceratops so you gobble what's left!",
+        "Content": "The <i>Tyrannosaurus</i> leaves before finishing the <i>Yehuecauhceratops</i> so you gobble what's left!",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -1289,7 +1289,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b_5a",
-        "Content": "The other Tyrannosaurus fights you off from the meal. ",
+        "Content": "The other <i>Tyrannosaurus</i> fights you off from the meal. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",
@@ -1317,7 +1317,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4b_5b",
-        "Content": "The Tyrannosaurus leaves before it finished eating the Yehuecauhceratops so you are able to bring the carcass back to your young. ",
+        "Content": "The <i>Tyrannosaurus</i> leaves before it finished eating the <i>Yehuecauhceratops</i> so you are able to bring the carcass back to your young. ",
         "choice 1": "",
         "choice 2": "",
         "env label": "water",

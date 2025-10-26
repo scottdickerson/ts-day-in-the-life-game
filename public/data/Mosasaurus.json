@@ -1,7 +1,7 @@
 [
     {
         "Code ID": "0",
-        "Content": "You are a Mosasaurus whose territory is near a dormant undersea volcano. You need lots of food to sustain yourself, so you better get to it!",
+        "Content": "You are a <i>Mosasaurus</i> whose territory is near a dormant undersea volcano. You need lots of food to sustain yourself, so you better get to it!",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -15,7 +15,7 @@
     },
     {
         "Code ID": "1",
-        "Content": "You see a school of Enchodus in the distance and closer by, a Squalicorax...which do you hunt?",
+        "Content": "You see a school of <i>Enchodus</i> in the distance and closer by, a <i>Squalicorax</i>...which do you hunt?",
         "exportedForReview": "TRUE",
         "choice 1": "The fish",
         "choice 2": "The shark",
@@ -29,7 +29,7 @@
     },
     {
         "Code ID": "1a",
-        "Content": "You ambush the school of Enchodus and eat a few but they don't fill you up. You will need to find more food. Should you try to hide yourself and wait for prey or continue swimming as you search?",
+        "Content": "You ambush the school of <i>Enchodus</i> and eat a few but they don't fill you up. You will need to find more food. Should you try to hide yourself and wait for prey or continue swimming as you search?",
         "exportedForReview": "TRUE",
         "choice 1": "Hide and wait",
         "choice 2": "Continue swimming",
@@ -43,7 +43,7 @@
     },
     {
         "Code ID": "1a_2a",
-        "Content": "You hide in deeper, darker waters and wait for an animal to pass above you. Soon, a Scaphites swims by. That shell looks really strong. Do you go after the ammonite anyway or wait for something else?",
+        "Content": "You hide in deeper, darker waters and wait for an animal to pass above you. Soon, a <i>Scaphites</i> swims by. That shell looks really strong. Do you go after the ammonite anyway or wait for something else?",
         "exportedForReview": "TRUE",
         "choice 1": "Attack",
         "choice 2": "Keep waiting",
@@ -57,7 +57,7 @@
     },
     {
         "Code ID": "1a_2a_3a",
-        "Content": "You snatch the ammonite. Their shell is hard but your powerful jaws crack it open! A Dolichorhynchops is coming towards you and might try to steal your ammonite. Should you attack or keep eating?",
+        "Content": "You snatch the ammonite. Their shell is hard but your powerful jaws crack it open! A <i>Dolichorhynchops</i> is coming towards you and might try to steal your ammonite. Should you attack or keep eating?",
         "exportedForReview": "TRUE",
         "choice 1": "Attack",
         "choice 2": "Keep eating",
@@ -85,7 +85,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a",
-        "Content": "You lunge at the Dolichorhynchops, not realizing they were being chased by Plioplatecarpus, another type of mosasaur. The Plioplatecarpus begins to attack you because their prey escaped. What should you do?",
+        "Content": "You lunge at the <i>Dolichorhynchops</i>, not realizing they were being chased by <i>Plioplatecarpus</i>, another type of mosasaur. The <i>Plioplatecarpus</i> begins to attack you because their prey escaped. What should you do?",
         "exportedForReview": "TRUE",
         "choice 1": "Try to get away",
         "choice 2": "Stay and fight",
@@ -99,10 +99,10 @@
     },
     {
         "Code ID": "1a_2a_3a_4b",
-        "Content": "As you wait for the right moment to ambush the Dolichorhynchops you realize a Plioplatecarpus, another type of mosasaur, is pursuing it. Should you attack the Dolichorhynchops or ambush the Plioplatecarpus instead?",
+        "Content": "As you wait for the right moment to ambush the <i>Dolichorhynchops</i> you realize a <i>Plioplatecarpus</i>, another type of mosasaur, is pursuing it. Should you attack the <i>Dolichorhynchops</i> or ambush the <i>Plioplatecarpus</i> instead?",
         "exportedForReview": "TRUE",
-        "choice 1": "Attack Dolichorhynchops",
-        "choice 2": "Ambush Plioplatecarpus",
+        "choice 1": "Attack <i>Dolichorhynchops</i>",
+        "choice 2": "Ambush <i>Plioplatecarpus</i>",
         "env label": "open ocean",
         "Time of Day": "evening",
         "Shot Img ID": "",
@@ -113,7 +113,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a",
-        "Content": "As you approach you realize it is a group of young Mosasaurus hiding in the darkness. You don't feel like attacking them but you are still hungry. Where to now?",
+        "Content": "As you approach you realize it is a group of young <i>Mosasaurus</i> hiding in the darkness. You don't feel like attacking them but you are still hungry. Where to now?",
         "exportedForReview": "TRUE",
         "choice 1": "Rudist reef",
         "choice 2": "Seaweed bed",
@@ -141,7 +141,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5a",
-        "Content": "Maybe you saved some energy by leaving but you are larger than the Plioplatecarpus and could have fought them off! At least you're uninjured.",
+        "Content": "You may have saved energy by not fighting but since you are larger than the <i>Plioplatecarpus</i>, you could have fought them off. At least you end your day uninjured.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -155,21 +155,21 @@
     },
     {
         "Code ID": "1a_2a_3a_4a_5a_6",
-        "Content": "If you are able to eat something big you may not have to eat again for a few days. Next time you might be desperate enough to fight back.",
+        "Content": "If you eat something big, you may not have to hunt for a few days. Next time, you might be desperate enough to fight back.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
         "env label": "",
         "Time of Day": "",
         "Shot Img ID": "",
-        "reaction label": "afraid",
+        "reaction label": "neutral",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
     },
     {
         "Code ID": "1a_2a_3a_4a_5b",
-        "Content": "You were lucky this time. Even though an angry Plioplatecarpus can injure you, your greater size and strength helped you win this fight.",
+        "Content": "You were lucky this time. Even though an angry <i>Plioplatecarpus</i> can injure you, your size and strength helped you in this fight.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -197,7 +197,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b_5a",
-        "Content": "The Plioplatecarpus sees you coming and swims away. ",
+        "Content": "The <i>Plioplatecarpus</i> sees you coming and swims away. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -211,7 +211,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b_5a_6",
-        "Content": "The Dolichorhynchops is all yours!",
+        "Content": "The <i>Dolichorhynchops</i> is all yours!",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -225,7 +225,7 @@
     },
     {
         "Code ID": "1a_2a_3a_4b_5b",
-        "Content": "You try to go for the Plioplatecarpus but they saw you in time to get away. When you turn back, the Dolichorhynchops is gone as well.",
+        "Content": "You try to go for the <i>Plioplatecarpus</i> but they saw you in time to get away. When you turn back, the <i>Dolichorhynchops</i> is gone as well.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -295,7 +295,7 @@
     },
     {
         "Code ID": "1a_2a_3b_4a_5b_6",
-        "Content": "The flailing animal is an injured Plioplatecarpus. Their injury leaves them with little energy to fight back, they make for an easy catch. ",
+        "Content": "The flailing animal is an injured <i>Plioplatecarpus</i>. Their injury leaves them with little energy to fight back, they make for an easy catch. ",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -379,7 +379,7 @@
     },
     {
         "Code ID": "1a_2b_3a",
-        "Content": "You are able to snatch a few birds and satisfy your hunger! Not too far from you, you see two Mosasaurus fighting. The winner begins to approach and flirt with you. Should you accept their advances or swim away?",
+        "Content": "You are able to snatch a few birds and satisfy your hunger! Not too far from you, you see two <i>Mosasaurus</i> fighting. The winner begins to approach and flirt with you. Should you accept their advances or swim away?",
         "exportedForReview": "TRUE",
         "choice 1": "Flirt back",
         "choice 2": "Swim away",
@@ -393,7 +393,7 @@
     },
     {
         "Code ID": "1a_2b_3b",
-        "Content": "You take a breath and afterwards you notice a Dolichorhynchops swimming by. They are swimming oddly, do you investigate or leave them alone?",
+        "Content": "You take a breath and afterwards you notice a <i>Dolichorhynchops</i> swimming by. They are swimming oddly, do you investigate or leave them alone?",
         "exportedForReview": "TRUE",
         "choice 1": "Investigate",
         "choice 2": "Leave them alone",
@@ -421,7 +421,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4b",
-        "Content": "You swim away and the other Mosasaurus does not follow you. You are resting for a moment after swimming away and some small fish start picking at your teeth. Should you scare them off?",
+        "Content": "You swim away and the other <i>Mosasaurus</i> does not follow you. You are resting for a moment and some small fish start picking at your teeth. Should you scare them off?",
         "exportedForReview": "FALSE",
         "choice 1": "Scare them",
         "choice 2": "Let them be",
@@ -435,7 +435,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a",
-        "Content": "Turns out this Dolichorhynchops was swimming oddly because they were stung by jellyfish. As you approach, you’re stung too! You’re injured, where should you rest?",
+        "Content": "Turns out this <i>Dolichorhynchops</i> was swimming oddly because they were stung by jellyfish. As you approach, you’re stung too! You’re injured, where should you rest?",
         "exportedForReview": "TRUE",
         "choice 1": "Seaweed bed",
         "choice 2": "Back to the surface",
@@ -449,7 +449,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b",
-        "Content": "They could have been sick. Now you are ravenous. You see a Xiphactinus zipping around after a school of Anomoedus. Do you try to go after the Xiphactinus while they are hunting?",
+        "Content": "They could have been sick. Now you are ravenous. You see a <i>Xiphactinus</i> zipping around after a school of <i>Anomoedus</i>. Do you try to go after the <i>Xiphactinus</i> while they are hunting?",
         "exportedForReview": "TRUE",
         "choice 1": "Go after them",
         "choice 2": "Wait till they eat",
@@ -463,7 +463,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4a_5a",
-        "Content": "You remain in his territory, but it is hard to share food with another fully grown Mosasaurus. He might also mistake some of your young for a snack.",
+        "Content": "You remain in his territory, but it is hard to share food with another fully grown <i>Mosasaurus</i>. He might also mistake some of your young for a snack.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -491,7 +491,7 @@
     },
     {
         "Code ID": "1a_2b_3a_4a_5b",
-        "Content": "Good choice. Even though he is your mate, he might not want to share territory and eventually could have eaten your offspring. ",
+        "Content": "Good choice. Even though he is your mate, he might not want to share territory and could eat your offspring.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -575,7 +575,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4a_5a",
-        "Content": "Uh oh! You swim towards the seaweed but run into a Squalicorax. The Squalicorax is surprised and bites you in defense.",
+        "Content": "Uh oh! You swim towards the seaweed but run into a <i>Squalicorax</i>. The <i>Squalicorax</i> is surprised and bites you in defense.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -631,7 +631,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b_5a",
-        "Content": "You try to swim after the Xiphactinus but they are moving too quickly and escape.",
+        "Content": "You try to swim after the <i>Xiphactinus</i> but they are moving too quickly and escape.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -659,7 +659,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b_5b",
-        "Content": "Nice choice, as the Xiphactinus is feeding you are able to make your move. ",
+        "Content": "Nice choice, as the <i>Xiphactinus</i> is feeding you are able to make your move. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -673,7 +673,7 @@
     },
     {
         "Code ID": "1a_2b_3b_4b_5b_6",
-        "Content": "The Xiphactinus makes a good meal.",
+        "Content": "The <i>Xiphactinus</i> makes a good meal.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -687,7 +687,7 @@
     },
     {
         "Code ID": "1b",
-        "Content": "Even though the Squalicorax is fast, you are able to ambush them and make a quick meal. You see another Mosasaurus approaching, should you try to pass by peacefully or chase them off?",
+        "Content": "Even though the <i>Squalicorax</i> is fast, you are able to ambush them and make a quick meal. You see another <i>Mosasaurus</i> approaching, should you try to pass by peacefully or chase them off?",
         "exportedForReview": "TRUE",
         "choice 1": "Try to pass by",
         "choice 2": "Chase them off",
@@ -701,7 +701,7 @@
     },
     {
         "Code ID": "1b_2a",
-        "Content": "Nice, this Mosasaurus wasn’t looking for trouble either. You safely pass. You are hungry again! Should you swim along the sea floor or try hunting in deeper, darker waters?",
+        "Content": "Nice, this <i>Mosasaurus</i> wasn’t looking for trouble either. You safely pass. You are hungry again! Should you swim along the sea floor or try hunting in deeper, darker waters?",
         "exportedForReview": "TRUE",
         "choice 1": "Sea floor",
         "choice 2": "Darker waters",
@@ -715,7 +715,7 @@
     },
     {
         "Code ID": "1b_2a_3a",
-        "Content": "You swim along the sea floor and come across a rudist bivalve reef. You see a Scaphites swiming slowly over the reef. Try to eat them or continue looking for something without such a hard shell?",
+        "Content": "You swim along the sea floor and come across a rudist bivalve reef. You see a <i>Scaphites</i> swiming slowly over the reef. Try to eat them or continue looking for something without such a hard shell?",
         "exportedForReview": "TRUE",
         "choice 1": "Try to eat",
         "choice 2": "Keep looking",
@@ -729,7 +729,7 @@
     },
     {
         "Code ID": "1b_2a_3b",
-        "Content": "You hide in deeper, darker waters. Eventually, a school of Enchodus passes above you. Do you ambush the fish or do you keep waiting?",
+        "Content": "You hide in deeper, darker waters. Eventually, a school of <i>Enchodus</i> passes above you. Do you ambush the fish or do you keep waiting?",
         "exportedForReview": "TRUE",
         "choice 1": "Ambush",
         "choice 2": "Wait a little",
@@ -743,7 +743,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4a",
-        "Content": "You are able to chomp the Scaphites! After you finish eating, you see a Protostega in the distance. Now that you know you can crack a hard shell, should you go after this turtle?",
+        "Content": "You are able to chomp the <i>Scaphites</i>! After you finish eating, you see a <i>Protostega</i> in the distance. Now that you know you can crack a hard shell, should you go after this turtle?",
         "exportedForReview": "TRUE",
         "choice 1": "Go after them",
         "choice 2": "Hold off",
@@ -757,9 +757,9 @@
     },
     {
         "Code ID": "1b_2a_3a_4b",
-        "Content": "You continue looking for something softer to eat. As you’re swimming, you come across two Dolichorhynchops chasing a school of fish. Should you try to take out one of the Dolichorhynchops or go after the school of fish?",
+        "Content": "You continue looking for something softer to eat. As you’re swimming, you come across two <i>Dolichorhynchops</i> chasing a school of fish. Should you try to take out one of the <i>Dolichorhynchops</i> or go after the school of fish?",
         "exportedForReview": "FALSE",
-        "choice 1": "Attack a Dolichorhynchops",
+        "choice 1": "Attack a <i>Dolichorhynchops</i>",
         "choice 2": "Join in on hunting fish",
         "env label": "rudist bivalve reef",
         "Time of Day": "evening",
@@ -771,7 +771,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a",
-        "Content": "As you ambush the school of fish you realize that two Plioplatecarpus are also pursuing them. The Plioplatecarpus see you charging and swim away. You swallow several fish, but you are still hungry. Where to now?",
+        "Content": "As you ambush the school of fish you realize that two <i>Plioplatecarpus</i> are also pursuing them. The <i>Plioplatecarpus</i> see you charging and swim away. You swallow several fish, but you are still hungry. Where to now?",
         "exportedForReview": "TRUE",
         "choice 1": "Look closer to shore",
         "choice 2": "Swim by the seaweed",
@@ -785,9 +785,9 @@
     },
     {
         "Code ID": "1b_2a_3b_4b",
-        "Content": "Smart! As you are waiting, you see two Plioplatecarpus snapping up some Enchodus. Do you hunt the Plioplatecarpus instead or chase the fish?",
+        "Content": "Smart! As you are waiting, you see two <i>Plioplatecarpus</i> snapping up some <i>Enchodus</i>. Do you hunt the <i>Plioplatecarpus</i> instead or chase the fish?",
         "exportedForReview": "TRUE",
-        "choice 1": "Plioplatecarpus",
+        "choice 1": "<i>Plioplatecarpus</i>",
         "choice 2": "Go for the fish",
         "env label": "open ocean",
         "Time of Day": "evening",
@@ -820,7 +820,7 @@
         "env label": "",
         "Time of Day": "",
         "Shot Img ID": "",
-        "reaction label": "afraid",
+        "reaction label": "injured",
         "reaction img": "",
         "NPC_A": "",
         "NPC_B": ""
@@ -855,7 +855,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5a",
-        "Content": "You attack one of the Dolichorhynchops and the other Dolichorhynchops comes after you! ",
+        "Content": "You attack one of the <i>Dolichorhynchops</i> and the other <i>Dolichorhynchops</i> comes after you! ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -869,7 +869,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5a_6",
-        "Content": "You are taken by surprise and lose both Dolichorhynchops.",
+        "Content": "You are taken by surprise and lose both <i>Dolichorhynchops</i>.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
@@ -883,7 +883,7 @@
     },
     {
         "Code ID": "1b_2a_3a_4b_5b",
-        "Content": "You and the Dolichorhynchops are all able to feed on the school of fish. ",
+        "Content": "You and the <i>Dolichorhynchops</i> are all able to feed on the school of fish. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -939,7 +939,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4a_5b",
-        "Content": "You spot a Protostega snacking on seaweed. You try to catch this giant turtle but your teeth only scratch their shell. They get away!",
+        "Content": "You spot a <i>Protostega</i> snacking on seaweed. You try to catch this giant turtle but your teeth only scratch their shell. They get away!",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -967,7 +967,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5a",
-        "Content": "As you go after one of the Plioplatecarpus, the other Plioplatecarpus attacks you. ",
+        "Content": "As you go after one of the <i>Plioplatecarpus</i>, the other <i>Plioplatecarpus</i> attacks you. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -995,7 +995,7 @@
     },
     {
         "Code ID": "1b_2a_3b_4b_5b",
-        "Content": "As you approach the school of fish the Plioplatecarpus see you and swim away. ",
+        "Content": "As you approach the school of fish the <i>Plioplatecarpus</i> see you and swim away. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -1023,7 +1023,7 @@
     },
     {
         "Code ID": "1b_2b",
-        "Content": "You chase the Mosasaurus off successfully, so you feel strong and powerful. You’re hungry again but you also need to swim to the surface to take a breath of air. What do you do first?",
+        "Content": "You chase the <i>Mosasaurus</i> off successfully, so you feel strong and powerful. You’re hungry again but you also need to swim to the surface to take a breath of air. What do you do first?",
         "exportedForReview": "TRUE",
         "choice 1": "Go take a breath",
         "choice 2": "Look for food first",
@@ -1093,9 +1093,9 @@
     },
     {
         "Code ID": "1b_2b_3a_4b",
-        "Content": "You look for something else to eat and you see a bird bobbing for fish, and in deeper water, a school of Anomoeodus feeding on bivalves. Which prey should you pursue?",
+        "Content": "You look for something else to eat and you see a bird bobbing for fish, and in deeper water, a school of <i>Anomoeodus</i> feeding on bivalves. Which prey should you pursue?",
         "exportedForReview": "TRUE",
-        "choice 1": "Anomoeodus",
+        "choice 1": "<i>Anomoeodus</i>",
         "choice 2": "The bird",
         "env label": "surface",
         "Time of Day": "evening",
@@ -1107,7 +1107,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a",
-        "Content": "As you are swimming around you see a feeding frenzy in the distance. Some Squalicorax and another Mosasaurus are feeding on a school of fish. Should you join the feeding frenzy or continue hunting solo?",
+        "Content": "As you are swimming around you see a feeding frenzy in the distance. Some <i>Squalicorax</i> and another <i>Mosasaurus</i> are feeding on a school of fish. Should you join the feeding frenzy or continue hunting solo?",
         "exportedForReview": "TRUE",
         "choice 1": "Feeding frenzy",
         "choice 2": "Hunt solo",
@@ -1149,7 +1149,7 @@
     },
     {
         "Code ID": "1b_2b_3a_4b_5a",
-        "Content": "Nice move! The school of Anomoeodus is too focused on its food and you are able to make a quick meal.",
+        "Content": "Nice move! The school of <i>Anomoeodus</i> is too focused on its food and you are able to make a quick meal.",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -1205,7 +1205,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5a",
-        "Content": "You join the feeding frenzy but bump into the other Mosasaurus. The Mosasaurus gets angry and attacks you. ",
+        "Content": "You join the feeding frenzy but bump into the other <i>Mosasaurus</i>. The <i>Mosasaurus</i> gets angry and attacks you. ",
         "exportedForReview": "TRUE",
         "choice 1": "",
         "choice 2": "",
@@ -1219,7 +1219,7 @@
     },
     {
         "Code ID": "1b_2b_3b_4a_5a_6",
-        "Content": "You perish from injury but make a good meal for the other Mosasaurus.",
+        "Content": "You perish from injury but make a good meal for the other <i>Mosasaurus</i>.",
         "exportedForReview": "",
         "choice 1": "",
         "choice 2": "",
