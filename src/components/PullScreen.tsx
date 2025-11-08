@@ -26,7 +26,7 @@ export const PullScreen: React.FC = () => {
                 {/* A Cretaceous
                 <br />
                 Adventure */}
-                <img src="TitleScreenAssets/Title.png"></img>
+                <img src="TitleScreenAssets/Title.webp"></img>
             </h1>
 
             {/* Call To Action

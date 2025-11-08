@@ -7,9 +7,9 @@
         "choice 2": "",
         "env label": "",
         "Time of Day": "",
-        "Shot Img ID": "/SelectScreenAssets/[codeID].png",
+        "Shot Img ID": "/SelectScreenAssets/[codeID].webp",
         "reaction label": "neutral",
-        "reaction img": "/SelectScreenAssets/####.png",
+        "reaction img": "/SelectScreenAssets/####.webp",
         "NPC_A": "",
         "NPC_B": ""
     },
@@ -1022,7 +1022,7 @@
         "NPC_B": ""
     },
     {
-        "Code ID": "You nestle into the seaweed and the sharks move past you.",
+        "Code ID": "1b_2b_3a_4a_5a_6",
         "Content": "You nestle into the seaweed and the sharks moves past you. ",
         "exportedForReview": "TRUE",
         "choice 1": "",

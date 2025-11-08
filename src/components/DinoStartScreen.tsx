@@ -90,7 +90,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
             <div
                 className="absolute inset-0 bg-center bg-cover -z-10"
                 style={{
-                    backgroundImage: `url(DinoWelcomeAssets/dino-welcome-background.png)`,
+                    backgroundImage: `url(DinoWelcomeAssets/dino-welcome-background.webp)`,
                 }}
                 aria-hidden="true"
             />

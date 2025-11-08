@@ -7,9 +7,9 @@
         "choice 2": "",
         "env label": "",
         "Time of Day": "",
-        "Shot Img ID": "/SelectScreenAssets/[codeID].png",
+        "Shot Img ID": "/SelectScreenAssets/[codeID].webp",
         "reaction label": "happy",
-        "reaction img": "/SelectScreenAssets/####.png",
+        "reaction img": "/SelectScreenAssets/####.webp",
         "NPC_A": "",
         "NPC_B": ""
     },

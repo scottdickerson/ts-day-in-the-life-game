@@ -58,7 +58,7 @@ export const StartScreenStyle: Story = {
             <div
                 className="relative w-full h-[600px] bg-center bg-cover flex items-center justify-center"
                 style={{
-                    backgroundImage: `url(/DinoWelcomeAssets/dino-welcome-background.png)`,
+                    backgroundImage: `url(/DinoWelcomeAssets/dino-welcome-background.webp)`,
                 }}
             >
                 <Story />

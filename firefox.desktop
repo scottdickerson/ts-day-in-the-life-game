@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/firefox --disable-pinch --kiosk http://localhost:80
+Exec=/usr/bin/firefox --disable-pinch --kiosk http://localhost:4321
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

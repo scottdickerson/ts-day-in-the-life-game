@@ -8,9 +8,9 @@
         "Time of Day": "",
         "exported": "",
         "NPC_A": "-",
-        "Shot Img ID": "/SelectScreenAssets/[codeID].png",
+        "Shot Img ID": "/SelectScreenAssets/[codeID].webp",
         "reaction label": "neutral",
-        "reaction img": "/SelectScreenAssets/####.png",
+        "reaction img": "/SelectScreenAssets/####.webp",
         "NPC_B": "-",
         "field13": ""
     },

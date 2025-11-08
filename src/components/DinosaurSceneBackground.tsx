@@ -19,7 +19,7 @@ const DinosaurSceneBackground: React.FC<DinosaurSceneBackgroundProps> = ({
     codeId,
 }) => {
     const dir = sceneDirMap[dinosaurType] || '/AgujaScenes'
-    const scenePath = `${dir}/${codeId}.png`
+    const scenePath = `${dir}/${codeId}.webp`
     return (
         <div
             style={{
@@ -37,10 +37,10 @@ const DinosaurSceneBackground: React.FC<DinosaurSceneBackgroundProps> = ({
             }}
             aria-label="Scene background"
         >
-            <div className="flex flex-col w-fit ">
+            {/* <div className="flex flex-col w-fit ">
                 <span className="bg-black text-white p-1 rounded text-5xl">{`Scene Code: ${codeId}`}</span>
                 <span className="bg-black text-white p-1 rounded text-5xl">{`Scene Background: ${scenePath}`}</span>
-            </div>
+            </div> */}
         </div>
     )
 }

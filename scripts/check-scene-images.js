@@ -87,11 +87,11 @@ function getAvailableSceneImages(sceneFolder) {
 
     try {
         const files = fs.readdirSync(scenePath)
-        files.forEach((file) => {
-            if (file.endsWith('.png')) {
-                images.add(file.replace('.png', ''))
+        for (const file of files) {
+            if (file.endsWith('.webp')) {
+                images.add(file.replace('.webp', ''))
             }
-        })
+        }
     } catch (error) {
         console.error(
             chalk.red(
@@ -202,7 +202,7 @@ function generateReport(results) {
                 // Show details for manageable lists
                 missingImages.forEach((missing) => {
                     console.log(
-                        chalk.yellow(`   📸 Missing: ${missing.codeId}.png`)
+                        chalk.yellow(`   📸 Missing: ${missing.codeId}.webp`)
                     )
                     console.log(
                         chalk.gray(`      Environment: ${missing.environment}`)
@@ -219,7 +219,7 @@ function generateReport(results) {
                     chalk.yellow(`   📸 Missing images (first 5 shown):`)
                 )
                 missingImages.slice(0, 5).forEach((missing) => {
-                    console.log(chalk.yellow(`      - ${missing.codeId}.png`))
+                    console.log(chalk.yellow(`      - ${missing.codeId}.webp`))
                 })
                 console.log(
                     chalk.gray(`      ... and ${missingCount - 5} more`)
