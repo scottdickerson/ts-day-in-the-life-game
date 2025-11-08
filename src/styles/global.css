@@ -6,7 +6,8 @@
 /* View Transitions API Customization */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-    animation-duration: 0.5s;
+    animation-duration: 0.3s; /* Faster transitions feel less jarring */
+    mix-blend-mode: normal;
 }
 
 ::view-transition-old(root) {
@@ -15,6 +16,20 @@
 
 ::view-transition-new(root) {
     animation-name: fade-in;
+}
+
+/* Prevent white flash during transitions */
+::view-transition-group(root) {
+    animation-timing-function: ease-in-out;
+}
+
+::view-transition-image-pair(root) {
+    isolation: isolate;
+}
+
+/* Ensure smooth background during transition */
+html::view-transition {
+    background-color: #000000;
 }
 
 @keyframes fade-out {
@@ -33,6 +48,15 @@
     to {
         opacity: 1;
     }
+}
+
+/* Smooth cross-fade - both pages visible during transition */
+::view-transition-old(root) {
+    z-index: 1;
+}
+
+::view-transition-new(root) {
+    z-index: 2;
 }
 
 /* Floating animation for dinosaurs */

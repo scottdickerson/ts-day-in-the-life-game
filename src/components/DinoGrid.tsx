@@ -61,7 +61,7 @@ export const DinoGrid: React.FC<DinoGridProps> = ({
                                     // DinoSelectScreen mode - render as clickable links
                                     <a
                                         href={`/${dino.id.toLowerCase()}.welcome`}
-                                        className="hover:scale-105 transition cursor-pointer no-underline relative block"
+                                        className="z-10 hover:scale-105 transition cursor-pointer no-underline relative block"
                                     >
                                         <SelectIndividualDinosaur {...dino} />
                                     </a>

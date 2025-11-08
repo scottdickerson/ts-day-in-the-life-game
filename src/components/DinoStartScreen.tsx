@@ -77,7 +77,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
             <DinoGrid
                 selectedDinoId={id}
                 selectedDinoRef={hiddenDinoRef}
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none z-10"
                 shouldAnimate={shouldAnimate}
                 transformStyle={{
                     transform: finalPosition
@@ -88,8 +88,9 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
 
             {/* Background layers */}
             <div
-                className="absolute inset-0 bg-center bg-cover -z-10"
+                className="absolute inset-0 bg-center bg-cover z-0"
                 style={{
+                    backgroundColor:'unset',
                     backgroundImage: `url(DinoWelcomeAssets/dino-welcome-background.webp)`,
                 }}
                 aria-hidden="true"

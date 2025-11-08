@@ -4,5 +4,11 @@ import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title="Select Creature">
+    <link
+        rel="preload"
+        as="image"
+        href="/DinoWelcomeAssets/dino-welcome-background.webp"
+        type="image/webp"
+    />
     <DinoSelectScreen client:only="react" />
 </Layout>
