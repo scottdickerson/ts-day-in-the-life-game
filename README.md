@@ -120,6 +120,7 @@ If you want to automatically deploy to Vercel instead on push to main, you can c
 - Disable the keyring prompt in [Gnome](https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot)
 
 ## Setting up Client browser
+
 - Open the Startup Applications application
 - Add Firefox to the "Startup Applications" app in Gnome with these cli parameters by copying the `firefox.desktop` file to the `~/.config/autostart` directory.
 - Open Firefox and go to about:config
@@ -128,4 +129,5 @@ If you want to automatically deploy to Vercel instead on push to main, you can c
 - Double-click it to set the value to false
 
 ## Setting up Node Server
+
 - Setup the node server by running `./scripts/setupNodeServer.sh`

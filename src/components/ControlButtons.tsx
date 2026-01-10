@@ -17,7 +17,7 @@ export const ControlButtons = ({ onChoice }: ControlButtonProps) => {
 
             if (type === 'choice') {
                 onChoice(button)
-            } 
+            }
         },
         onArduinoConnected: () => {
             console.log('🎮 Arduino buttons are now active!')
