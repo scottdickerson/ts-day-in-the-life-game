@@ -17,22 +17,7 @@ export const ControlButtons = ({ onChoice }: ControlButtonProps) => {
 
             if (type === 'choice') {
                 onChoice(button)
-            } else if (type === 'dinosaur') {
-                // Handle dinosaur selection buttons (3-7)
-                const dinosaurMap = {
-                    3: DinosaurTypeEnum.Aguja,
-                    4: DinosaurTypeEnum.Krito,
-                    5: DinosaurTypeEnum.Tyranno,
-                    6: DinosaurTypeEnum.Mosa,
-                    7: DinosaurTypeEnum.Protos,
-                }
-                const dinosaurPath =
-                    dinosaurMap[button as keyof typeof dinosaurMap]
-                if (dinosaurPath) {
-                    console.log(`🦕 Navigating to ${dinosaurPath} game`)
-                    window.location.href = `/${dinosaurPath.toLocaleLowerCase()}.welcome`
-                }
-            }
+            } 
         },
         onArduinoConnected: () => {
             console.log('🎮 Arduino buttons are now active!')
