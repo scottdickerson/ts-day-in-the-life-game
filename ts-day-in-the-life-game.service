@@ -1,0 +1,16 @@
+[Unit]
+Description=Day in the Life Game Preview Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/musework/Documents/GitHub/ts-day-in-the-life-game
+Environment="PATH=/home/musework/.nvm/versions/node/v24.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/home/musework/.nvm/versions/node/v24.12.0/bin/npm run preview:node
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

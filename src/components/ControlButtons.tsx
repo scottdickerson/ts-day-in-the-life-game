@@ -6,7 +6,7 @@ export interface ControlButtonProps {
     onBack?: () => void
 }
 
-export const ControlButtons = ({ onBack, onChoice }: ControlButtonProps) => {
+export const ControlButtons = ({ onChoice }: ControlButtonProps) => {
     // Set up Arduino button for choices
     useArduinoButtons({
         onButtonPress: (

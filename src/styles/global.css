@@ -137,5 +137,6 @@ html::view-transition {
     body {
         @apply bg-background text-foreground;
         text-wrap: pretty;
+        overflow: hidden;
     }
 }

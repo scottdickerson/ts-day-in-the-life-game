@@ -72,14 +72,6 @@ npm run dev:node
 
 ## Building
 
-**Static Site Build:**
-
-```bash
-npm run build
-sudo cp -r ./dist/* /var/www/html
-systemctl restart nginx
-```
-
 **Node.js Server Build (with Arduino support):**
 
 ```bash
@@ -126,4 +118,6 @@ If you want to automatically deploy to Vercel instead on push to main, you can c
 - Open the gnome-extensions site in Firefox and download the [disable-gestures ](https://extensions.gnome.org/extension/4049/disable-gestures-2021/) extension
 - Open the Extensions app in Gnome desktop and disable all UI features except the Desktop Icons one
 - Disable the keyring prompt in [Gnome](https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot)
+- Open the Startup Applications application
 - Add Chrome to the "Startup Applications" app in Gnome with these cli parameters by copying the `chrome.desktop` file to the `~/.config/autostart` directory.
+- Setup the node server by running `./scripts/setupNodeServer.sh`

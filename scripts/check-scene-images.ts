@@ -87,7 +87,6 @@ const DINOSAUR_CONFIGS: DinosaurConfig[] = [
  */
 function shouldHaveSceneImage(
     storyEntry: StoryEntry,
-    exportedField: string
 ): boolean {
     const codeId = storyEntry['Code ID']
 
