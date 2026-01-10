@@ -1,6 +1,7 @@
 ---
 import { DinoSelectScreen } from '../components/DinoSelectScreen'
 import Layout from '@/layouts/Layout.astro'
+import { ArduinoDinoSelectListener } from '@/components/ArduinoDinoSelectListener'
 ---
 
 <Layout title="Select Creature">
@@ -11,4 +12,5 @@ import Layout from '@/layouts/Layout.astro'
         type="image/webp"
     />
     <DinoSelectScreen client:only="react" />
+    <ArduinoDinoSelectListener client:only="react" />
 </Layout>

@@ -687,7 +687,7 @@
     },
     {
         "Code ID": "1b",
-        "Content": "Those mammals were moving pretty fast. You are still hungry so you need to find something else to eat. Do you look in the clearing or the forest?",
+        "Content": "Since you did not go after the ornithomimids, you are still hungry. Do you look in the clearing or the forest for food?",
         "choice 1": "The clearing",
         "choice 2": "The forest",
         "env label": "trail",

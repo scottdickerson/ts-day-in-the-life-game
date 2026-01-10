@@ -1,8 +1,8 @@
 import { useArduinoButtons } from '@/hooks/useArduinoButtons'
 import { DinosaurTypeEnum } from './utils'
 
-export const ArduinoStartAndDinoSelectListener = () => {
-    // Set up Arduino button for choices
+export const ArduinoDinoSelectListener = () => {
+    // Set up Arduino button for dinosaur selection
     useArduinoButtons({
         onButtonPress: (
             button: number,
@@ -10,10 +10,7 @@ export const ArduinoStartAndDinoSelectListener = () => {
         ) => {
             console.log(`🎮 Arduino button ${button} pressed (type: ${type})`)
 
-            if (type === 'start') {
-                console.log('🏠 Navigating to select screen')
-                window.location.href = '/select'
-            } else if (type === 'dinosaur') {
+            if (type === 'dinosaur') {
                 // Handle dinosaur selection buttons (3-7)
                 const dinosaurMap = {
                     3: DinosaurTypeEnum.Aguja,
@@ -45,3 +42,4 @@ export const ArduinoStartAndDinoSelectListener = () => {
     })
     return null
 }
+
