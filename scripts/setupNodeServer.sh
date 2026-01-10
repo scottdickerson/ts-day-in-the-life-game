@@ -40,6 +40,16 @@ systemctl --user enable ts-day-in-the-life-game.service
 echo "Enabling linger to allow service to run when not logged in..."
 sudo loginctl enable-linger "$USER"
 
+# Add user to dialout group for Arduino serial port access
+echo "Adding user to dialout group for Arduino serial port access..."
+if ! groups "$USER" | grep -q dialout; then
+    sudo usermod -a -G dialout "$USER"
+    echo "  ✓ User added to dialout group"
+    echo "  ⚠️  You will need to log out and back in (or restart) for group changes to take effect"
+else
+    echo "  ✓ User already in dialout group"
+fi
+
 echo ""
 echo "✓ Service setup complete!"
 echo ""
