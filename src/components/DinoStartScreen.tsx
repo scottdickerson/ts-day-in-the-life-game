@@ -100,7 +100,7 @@ export const DinoStartScreen: React.FC<DinoStartScreenProps> = ({
             <div className="max-w-[640px] pt-[268px] ml-[206px] text-[#2a5433] flex flex-col gap-14 animate-fade duration-1000">
                 <div>
                     <h2 className="text-[75px] leading-[1.05] font-medium mb-6">
-                        You are an
+                        You are {/^[aeiouAEIOU]/.test(name) ? 'an' : 'a'}
                         <br />
                         <span className="italic">
                             {name.slice(0, 1).toUpperCase() + name.slice(1)}
