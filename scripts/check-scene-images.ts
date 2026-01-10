@@ -85,9 +85,7 @@ const DINOSAUR_CONFIGS: DinosaurConfig[] = [
 /**
  * Check if a story code should have a scene image
  */
-function shouldHaveSceneImage(
-    storyEntry: StoryEntry,
-): boolean {
+function shouldHaveSceneImage(storyEntry: StoryEntry): boolean {
     const codeId = storyEntry['Code ID']
 
     // Skip entries without code IDs, empty code IDs, conclusion entries (with 6 suffix), "0" entries, or entries ending with simple digits
@@ -153,7 +151,7 @@ function loadStoryData(jsonFile: string): StoryEntry[] {
  * Check scene images for a single dinosaur
  */
 function checkDinosaurScenes(config: DinosaurConfig): CheckResult {
-    const { name, jsonFile, sceneFolder, exportedField } = config
+    const { name, jsonFile, sceneFolder } = config
 
     console.log(chalk.blue(`\n🦕 Checking ${name}...`))
 
@@ -164,7 +162,7 @@ function checkDinosaurScenes(config: DinosaurConfig): CheckResult {
     const exportedScenes: string[] = []
 
     storyData.forEach((entry) => {
-        if (shouldHaveSceneImage(entry, exportedField)) {
+        if (shouldHaveSceneImage(entry)) {
             const codeId = entry['Code ID']
             exportedScenes.push(codeId)
 
