@@ -58,10 +58,10 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
                 aria-hidden="true"
             />
 
-            <div className="absolute top-[156px] w-full pt-40">
+            <div className="absolute w-full pt-40">
                 {/* Game Over arc text */}
                 <svg
-                    className="absolute -top-[80px] -translate-x-[50px] translate-y-1/2  w-full h-[180px] pointer-events-none z-10"
+                    className="absolute -top-[40px] -translate-x-[50px] translate-y-1/2  w-full h-[180px] pointer-events-none z-10"
                     viewBox="0 0 850 180"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -93,7 +93,7 @@ export const FinalScreen: React.FC<FinalScreenProps> = ({
             </div>
 
             {/* Message */}
-            <div className="absolute left-1/2 top-[1150px] -translate-x-1/2 -translate-y-1/2 w-[1350px] flex flex-col justify-center text-center">
+            <div className="absolute left-1/2 top-[900px] -translate-x-1/2 -translate-y-1/2 w-[1350px] flex flex-col justify-center text-center">
                 <p className="text-[44px] md:text-[55px] leading-[1.25] font-medium drop-shadow-[0_4px_10px_rgba(0,0,0,0.45)]">
                     {parse(message)}
                 </p>
