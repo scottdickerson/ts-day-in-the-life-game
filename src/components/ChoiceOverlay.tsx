@@ -20,7 +20,7 @@ export const ChoiceOverlay: React.FC<ChoiceOverlayProps> = ({
     onMoveToLastNode,
     onReset,
 }) => (
-    <div className="absolute left-0 right-0 bottom-0 h-fit bg-black/60 rounded-tl-[80px] rounded-tr-[80px] z-[1] flex flex-col justify-between items-start pl-[560px] pr-[75px] mx-[180px]">
+    <div className="absolute left-0 right-0 bottom-0 h-fit bg-black/80 rounded-tl-[80px] rounded-tr-[80px] z-[1] flex flex-col justify-between items-start pl-[560px] pr-[75px] mx-[180px]">
         <div className="text-white font-archivo font-medium text-[33px] leading-[45px] mb-10 mt-16 max-w-[985px] z-[2] whitespace-pre-line">
             {parse(currentNode.Content)}
         </div>
